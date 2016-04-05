@@ -4,8 +4,8 @@ package club.nsdn.nyasamaelectricity.TileEntities;
  * Created by drzzm32 on 2016.3.25.
  */
 
-import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
+import net.minecraft.tileentity.TileEntity;
 
 public class TileEntityInsulatorSquareBig extends TileEntityBase {
 
@@ -13,7 +13,8 @@ public class TileEntityInsulatorSquareBig extends TileEntityBase {
 
     public TileEntityInsulatorSquareBig() {
         super("InsulatorSquareBig");
-        //setBlockTextureName("nyasamaelectricity:insulator_square_big");
+        //setIconLocation("nyasamaelectricity:insulator_square_big");
+
     }
 
     @Override

@@ -1,25 +1,24 @@
 package club.nsdn.nyasamaelectricity.TileEntities;
 
 /**
- * Created by drzzm32 on 2016.3.25.
+ * Created by drzzm32 on 2016.4.5.
  */
 
 import net.minecraft.world.World;
 import net.minecraft.tileentity.TileEntity;
 
-public class TileEntityInsulatorSquareMedium extends TileEntityBase {
+public class TileEntityCatenaryShelfBody extends TileEntityBase {
 
-    public static class InsulatorSquareMedium extends TileEntity { }
+    public static class CatenaryShelfBody extends TileEntity { }
 
-    public TileEntityInsulatorSquareMedium() {
-        super("InsulatorSquareMedium");
+    public TileEntityCatenaryShelfBody() {
+        super("CatenaryShelfBody");
         //setIconLocation("nyasamaelectricity:insulator_square_medium");
     }
 
     @Override
     public TileEntity createNewTileEntity(World world, int meta) {
-        return new InsulatorSquareMedium();
+        return new CatenaryShelfBody();
     }
-
 
 }

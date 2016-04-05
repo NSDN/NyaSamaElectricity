@@ -13,7 +13,7 @@ public class TileEntityInsulatorSquareSmall extends TileEntityBase {
 
     public TileEntityInsulatorSquareSmall() {
         super("InsulatorSquareSmall");
-        //setBlockTextureName("nyasamaelectricity:insulator_square_small");
+        //setIconLocation("nyasamaelectricity:insulator_square_small");
     }
 
     @Override
