@@ -80,6 +80,27 @@ public class TileEntityLoader {
         GameRegistry.registerTileEntity(
                 TileEntityCatenaryShelfHeadTwin.CatenaryShelfHeadTwin.class,
                 "tileEntityCatenaryShelfHeadTwin");
+
+        ClientRegistry.bindTileEntitySpecialRenderer(
+                TileEntityCatenaryShelfHeadThin.CatenaryShelfHeadThin.class,
+                new InsulatorRenderer(new CatenaryShelfHeadThinModel()));
+        GameRegistry.registerTileEntity(
+                TileEntityCatenaryShelfHeadThin.CatenaryShelfHeadThin.class,
+                "tileEntityCatenaryShelfHeadThin");
+
+        ClientRegistry.bindTileEntitySpecialRenderer(
+                TileEntityCatenaryShelfHeadNoInsulatorThin.CatenaryShelfHeadNoInsulatorThin.class,
+                new InsulatorRenderer(new CatenaryShelfHeadNoInsulatorThinModel()));
+        GameRegistry.registerTileEntity(
+                TileEntityCatenaryShelfHeadNoInsulatorThin.CatenaryShelfHeadNoInsulatorThin.class,
+                "tileEntityCatenaryShelfHeadNoInsulatorThin");
+
+        ClientRegistry.bindTileEntitySpecialRenderer(
+                TileEntityCatenaryShelfHeadTwinThin.CatenaryShelfHeadTwinThin.class,
+                new InsulatorRenderer(new CatenaryShelfHeadTwinThinModel()));
+        GameRegistry.registerTileEntity(
+                TileEntityCatenaryShelfHeadTwinThin.CatenaryShelfHeadTwinThin.class,
+                "tileEntityCatenaryShelfHeadTwinThin");
     }
 
 }

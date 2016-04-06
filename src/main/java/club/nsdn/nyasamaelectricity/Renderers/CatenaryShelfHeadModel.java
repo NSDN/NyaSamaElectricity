@@ -43,8 +43,6 @@ public class CatenaryShelfHeadModel extends ModelBase
     ModelRenderer Shape44;
     ModelRenderer Shape45;
     ModelRenderer Shape46;
-    ModelRenderer Shape47;
-    ModelRenderer Shape48;
     ModelRenderer Shape49;
     ModelRenderer Shape50;
     ModelRenderer Shape51;
@@ -56,7 +54,6 @@ public class CatenaryShelfHeadModel extends ModelBase
     ModelRenderer Shape57;
     ModelRenderer Shape58;
     ModelRenderer Shape59;
-    ModelRenderer Shape60;
     ModelRenderer Shape61;
     ModelRenderer Shape62;
     ModelRenderer Piece1;
@@ -267,29 +264,17 @@ public class CatenaryShelfHeadModel extends ModelBase
       Shape44.mirror = true;
       setRotation(Shape44, -0.7853982F, 0F, 0F);
       Shape45 = new ModelRenderer(this, 0, 0);
-      Shape45.addBox(0F, 0F, 0F, 1, 11, 1);
-      Shape45.setRotationPoint(-0.5F, 12.2F, -24.3F);
+      Shape45.addBox(0F, 0F, 0F, 1, 10, 1);
+      Shape45.setRotationPoint(-0.5F, 12.2F, -22.3F);
       Shape45.setTextureSize(22, 17);
       Shape45.mirror = true;
-      setRotation(Shape45, -0.7853982F, 0F, 0F);
+      setRotation(Shape45, -1.047198F, 0F, 0F);
       Shape46 = new ModelRenderer(this, 0, 0);
       Shape46.addBox(0F, 0F, 0F, 2, 5, 2);
       Shape46.setRotationPoint(-1F, 4F, -16F);
       Shape46.setTextureSize(22, 17);
       Shape46.mirror = true;
       setRotation(Shape46, -0.5235988F, 0F, 0F);
-      Shape47 = new ModelRenderer(this, 0, 0);
-      Shape47.addBox(0F, 0F, 0F, 1, 11, 1);
-      Shape47.setRotationPoint(-0.5F, 20F, -32F);
-      Shape47.setTextureSize(22, 17);
-      Shape47.mirror = true;
-      setRotation(Shape47, -2.356194F, 0F, 0F);
-      Shape48 = new ModelRenderer(this, 0, 0);
-      Shape48.addBox(0F, 0F, 0F, 5, 1, 5);
-      Shape48.setRotationPoint(-2.5F, 15.5F, 13.5F);
-      Shape48.setTextureSize(22, 17);
-      Shape48.mirror = true;
-      setRotation(Shape48, 0F, 0F, 0F);
       Shape49 = new ModelRenderer(this, 0, 0);
       Shape49.addBox(0F, 0F, 0F, 2, 2, 9);
       Shape49.setRotationPoint(-1F, 3.5F, 4F);
@@ -304,7 +289,7 @@ public class CatenaryShelfHeadModel extends ModelBase
       setRotation(Shape50, 0F, 0F, 0F);
       Shape51 = new ModelRenderer(this, 0, 0);
       Shape51.addBox(0F, 0F, 0F, 1, 2, 1);
-      Shape51.setRotationPoint(-0.5F, 17.5F, 15.5F);
+      Shape51.setRotationPoint(-0.5F, 15.5F, 15.5F);
       Shape51.setTextureSize(22, 17);
       Shape51.mirror = true;
       setRotation(Shape51, 0F, 0F, 0F);
@@ -356,12 +341,6 @@ public class CatenaryShelfHeadModel extends ModelBase
       Shape59.setTextureSize(22, 17);
       Shape59.mirror = true;
       setRotation(Shape59, 0F, 0F, 0F);
-      Shape60 = new ModelRenderer(this, 0, 0);
-      Shape60.addBox(0F, 0F, 0F, 2, 1, 2);
-      Shape60.setRotationPoint(-1F, 16.5F, 15F);
-      Shape60.setTextureSize(22, 17);
-      Shape60.mirror = true;
-      setRotation(Shape60, 0F, 0F, 0F);
       Shape61 = new ModelRenderer(this, 0, 0);
       Shape61.addBox(0F, 0F, 0F, 2, 1, 2);
       Shape61.setRotationPoint(-1F, 14.5F, 15F);
@@ -417,8 +396,6 @@ public class CatenaryShelfHeadModel extends ModelBase
     Shape16.render(f5);
     Shape17.render(f5);
 
-    GL11.glPushMatrix();
-    GL11.glTranslatef(0.0F, -0.2F, 0.0F);
     Shape18.render(f5);
     Shape19.render(f5);
     Shape20.render(f5);
@@ -447,9 +424,7 @@ public class CatenaryShelfHeadModel extends ModelBase
     Shape44.render(f5);
     Shape45.render(f5);
     Shape46.render(f5);
-    Shape47.render(f5);
 
-    Shape48.render(f5);
     Shape49.render(f5);
     Shape50.render(f5);
     Shape51.render(f5);
@@ -461,14 +436,9 @@ public class CatenaryShelfHeadModel extends ModelBase
     Shape57.render(f5);
     Shape58.render(f5);
     Shape59.render(f5);
-    Shape60.render(f5);
     Shape61.render(f5);
-    GL11.glPopMatrix();
 
-    GL11.glPushMatrix();
-    GL11.glTranslatef(0.0F, -0.13F, 0.0F);
     Shape62.render(f5);
-    GL11.glPopMatrix();
 
     Piece1.render(f5);
     Piece2.render(f5);
