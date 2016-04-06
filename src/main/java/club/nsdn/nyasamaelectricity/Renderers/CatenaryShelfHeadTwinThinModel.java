@@ -335,6 +335,7 @@ public class CatenaryShelfHeadTwinThinModel extends ModelBase {
         Shape46.render(f5);
         Shape63.render(f5);
 
+        GL11.glPushMatrix();
         GL11.glRotatef(180.0F, 0.0F, 1.0F, 0.0F);
         Shape18.render(f5);
         Shape19.render(f5);
@@ -364,6 +365,7 @@ public class CatenaryShelfHeadTwinThinModel extends ModelBase {
         Shape45.render(f5);
         Shape46.render(f5);
         Shape63.render(f5);
+        GL11.glPopMatrix();
 
         Piece1.render(f5);
         Piece2.render(f5);

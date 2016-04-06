@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7423ec30-32b0-49a4-a09b-424972be000f" name="Default" comment="" />
+    <list default="true" id="7423ec30-32b0-49a4-a09b-424972be000f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfBodyModel.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfBodyModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfFootModel.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfFootModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadModel.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadNoInsulatorModel.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadNoInsulatorModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadTwinModel.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadTwinModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadTwinThinModel.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadTwinThinModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/InsulatorRenderer.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/InsulatorRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/InsulatorSquareBigModel.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/InsulatorSquareBigModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/InsulatorSquareMediumModel.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/InsulatorSquareMediumModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/InsulatorSquareSmallModel.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/InsulatorSquareSmallModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/nyasamaelectricity/lang/en_US.lang" afterPath="$PROJECT_DIR$/src/main/resources/assets/nyasamaelectricity/lang/en_US.lang" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/nyasamaelectricity/lang/zh_CN.lang" afterPath="$PROJECT_DIR$/src/main/resources/assets/nyasamaelectricity/lang/zh_CN.lang" />
+    </list>
     <ignored path="NyaSamaElectricity.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -83,49 +98,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TileEntityBase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="81" column="58" selection-start-line="81" selection-start-column="58" selection-end-line="81" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3554#3555#0" expanded="true" />
-                <element signature="e#3582#3583#0" expanded="true" />
-                <element signature="e#3644#3645#0" expanded="true" />
-                <element signature="e#3711#3712#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="InsulatorRenderer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/InsulatorRenderer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="87" column="45" selection-start-line="87" selection-start-column="45" selection-end-line="87" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TileEntityLoader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="102" column="55" selection-start-line="102" selection-start-column="55" selection-end-line="102" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BlockLoader.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Blocks/BlockLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.6475409">
-              <caret line="48" column="74" selection-start-line="48" selection-start-column="74" selection-end-line="48" selection-end-column="74" />
+              <caret line="86" column="45" selection-start-line="86" selection-start-column="45" selection-end-line="86" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -135,17 +112,39 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadNoInsulatorThinModel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="334" column="27" selection-start-line="307" selection-start-column="8" selection-end-line="334" selection-end-column="27" />
+              <caret line="314" column="27" selection-start-line="314" selection-start-column="27" selection-end-line="314" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CatenaryShelfHeadModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadModel.java">
+      <file leaf-file-name="CatenaryShelfHeadThinModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadThinModel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="273" column="46" selection-start-line="273" selection-start-column="46" selection-end-line="273" selection-end-column="46" />
+              <caret line="402" column="27" selection-start-line="402" selection-start-column="27" selection-end-line="402" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InsulatorSquareMediumModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/InsulatorSquareMediumModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="99" column="26" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InsulatorSquareBigModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/InsulatorSquareBigModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="73" column="4" selection-start-line="73" selection-start-column="4" selection-end-line="75" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -154,10 +153,56 @@
         </entry>
       </file>
       <file leaf-file-name="CatenaryShelfHeadModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://D:/Users/drzzm32/Desktop/CatenaryShelfHeadModel.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadModel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="267" column="6" selection-start-line="267" selection-start-column="6" selection-end-line="272" selection-end-column="47" />
+              <caret line="271" column="48" selection-start-line="271" selection-start-column="48" selection-end-line="271" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CatenaryShelfFootModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfFootModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="112" column="34" selection-start-line="112" selection-start-column="34" selection-end-line="112" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CatenaryShelfBodyModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfBodyModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="en_US.lang" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/assets/nyasamaelectricity/lang/en_US.lang">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zh_CN.lang" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/assets/nyasamaelectricity/lang/zh_CN.lang">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.45081967">
+              <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -171,6 +216,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="availableProjects">
@@ -736,9 +784,7 @@
         <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/CreativeTab/CreativeTabLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/ExtTileEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Proxy/CommonProxy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/InsulatorSquareSmallModel.java" />
         <option value="D:/Users/drzzm32/Desktop/InsulatorSquareMediumModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/InsulatorSquareMediumModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/nyasamaelectricity/models/blocks/1" />
         <option value="D:/まいてつ　体験版/readme.txt" />
@@ -750,27 +796,29 @@
         <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfBody.java" />
         <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHead.java" />
         <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/NyaSamaElectricity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/InsulatorSquareBigModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfBodyModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfFootModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityCatenaryShelfFoot.java" />
         <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityCatenaryShelfHeadNoInsulator.java" />
         <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityCatenaryShelfHeadTwin.java" />
         <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityBase.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/nyasamaelectricity/lang/zh_CN.lang" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/nyasamaelectricity/lang/en_US.lang" />
-        <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/InsulatorRenderer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadNoInsulatorModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadTwinModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadThinModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadNoInsulatorThinModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadTwinThinModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityCatenaryShelfHeadThin.java" />
         <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityCatenaryShelfHeadNoInsulatorThin.java" />
         <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityCatenaryShelfHeadTwinThin.java" />
         <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Blocks/BlockLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadTwinThinModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadTwinModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadNoInsulatorModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/InsulatorSquareSmallModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/InsulatorSquareMediumModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/InsulatorSquareBigModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/InsulatorRenderer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfFootModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfBodyModel.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/nyasamaelectricity/lang/en_US.lang" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/nyasamaelectricity/lang/zh_CN.lang" />
       </list>
     </option>
   </component>
@@ -815,8 +863,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1159,7 +1205,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1169,6 +1217,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/Works/Minecraft/NyaSamaElectricity/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityInsulatorSquareMedium.java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -1524,7 +1573,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1040" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1040" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1766,56 +1815,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/InsulatorSquareMediumModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="101" column="26" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/InsulatorSquareSmallModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.2054796">
-          <caret line="151" column="26" selection-start-line="151" selection-start-column="26" selection-end-line="151" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/InsulatorSquareBigModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75342464">
-          <caret line="73" column="4" selection-start-line="73" selection-start-column="4" selection-end-line="76" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfBodyModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48961425">
-          <caret line="122" column="30" selection-start-line="122" selection-start-column="30" selection-end-line="122" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfFootModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42465752">
-          <caret line="115" column="30" selection-start-line="115" selection-start-column="30" selection-end-line="115" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityCatenaryShelfBody.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1840,30 +1839,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/nyasamaelectricity/lang/zh_CN.lang">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="8" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/nyasamaelectricity/lang/en_US.lang">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="81" column="58" selection-start-line="81" selection-start-column="58" selection-end-line="81" selection-end-column="58" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3554#3555#0" expanded="true" />
-            <element signature="e#3582#3583#0" expanded="true" />
-            <element signature="e#3644#3645#0" expanded="true" />
-            <element signature="e#3711#3712#0" expanded="true" />
+            <element signature="e#1294#1295#0" expanded="false" />
+            <element signature="e#1333#1334#0" expanded="false" />
+            <element signature="e#1381#1382#0" expanded="false" />
+            <element signature="e#1406#1407#0" expanded="false" />
+            <element signature="e#1457#1458#0" expanded="false" />
+            <element signature="e#1485#1486#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1884,55 +1870,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="273" column="46" selection-start-line="273" selection-start-column="46" selection-end-line="273" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Users/drzzm32/Desktop/CatenaryShelfHeadModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="267" column="6" selection-start-line="267" selection-start-column="6" selection-end-line="272" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadThinModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6182796">
-          <caret line="427" column="27" selection-start-line="400" selection-start-column="8" selection-end-line="427" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadTwinModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27419356">
-          <caret line="367" column="25" selection-start-line="367" selection-start-column="25" selection-end-line="367" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadNoInsulatorModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.6612903">
-          <caret line="257" column="6" selection-start-line="257" selection-start-column="6" selection-end-line="257" selection-end-column="6" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#17090#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadNoInsulatorThinModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="334" column="27" selection-start-line="307" selection-start-column="8" selection-end-line="334" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1940,14 +1884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5645161">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadTwinThinModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.3172043">
-          <caret line="336" column="8" selection-start-line="336" selection-start-column="8" selection-end-line="336" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -1968,28 +1904,146 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/InsulatorRenderer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="87" column="45" selection-start-line="87" selection-start-column="45" selection-end-line="87" selection-end-column="45" />
+          <caret line="102" column="55" selection-start-line="102" selection-start-column="55" selection-end-line="102" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Blocks/BlockLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="74" selection-start-line="48" selection-start-column="74" selection-end-line="48" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadTwinModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="363" column="27" selection-start-line="363" selection-start-column="27" selection-end-line="363" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadNoInsulatorModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="255" column="6" selection-start-line="255" selection-start-column="6" selection-end-line="255" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityLoader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadTwinThinModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="102" column="55" selection-start-line="102" selection-start-column="55" selection-end-line="102" selection-end-column="55" />
+          <caret line="367" column="27" selection-start-line="367" selection-start-column="27" selection-end-line="367" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Blocks/BlockLoader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/InsulatorSquareSmallModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6475409">
-          <caret line="48" column="74" selection-start-line="48" selection-start-column="74" selection-end-line="48" selection-end-column="74" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="148" column="26" selection-start-line="148" selection-start-column="26" selection-end-line="148" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/InsulatorSquareMediumModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="99" column="26" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/InsulatorSquareBigModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="73" column="4" selection-start-line="73" selection-start-column="4" selection-end-line="75" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/InsulatorRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="45" selection-start-line="86" selection-start-column="45" selection-end-line="86" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadThinModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="402" column="27" selection-start-line="402" selection-start-column="27" selection-end-line="402" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadNoInsulatorThinModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="314" column="27" selection-start-line="314" selection-start-column="27" selection-end-line="314" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfHeadModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="271" column="48" selection-start-line="271" selection-start-column="48" selection-end-line="271" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfFootModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="112" column="34" selection-start-line="112" selection-start-column="34" selection-end-line="112" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/CatenaryShelfBodyModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/nyasamaelectricity/lang/en_US.lang">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/nyasamaelectricity/lang/zh_CN.lang">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45081967">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
           <folding />
         </state>
       </provider>
