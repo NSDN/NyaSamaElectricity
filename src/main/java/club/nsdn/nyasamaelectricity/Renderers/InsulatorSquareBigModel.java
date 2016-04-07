@@ -4,9 +4,9 @@ package club.nsdn.nyasamaelectricity.Renderers;
  * Created by drzzm32 on 2016.3.25.
  */
 
+import net.minecraft.entity.Entity;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.entity.Entity;
 
 public class InsulatorSquareBigModel extends ModelBase {
 

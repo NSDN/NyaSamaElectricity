@@ -79,69 +79,49 @@ public class InsulatorRenderer extends TileEntitySpecialRenderer {
                 break;
 
             case 5:
-                rotation = 0;
-                //GL11.glPushMatrix();
+                GL11.glTranslatef(0.0F, 1.0F, 0.0F);
                 GL11.glRotatef(90.0F, 1.0F, 0.0F, 0.0F);
-                GL11.glTranslatef(0.0F, 0.0F, 1.0F);
-                //GL11.glPopMatrix();
-                GL11.glRotatef(rotation, 0.0F, 1.0F, 0.0F);
+                GL11.glTranslatef(0.0F, -1.0F, 0.0F);
                 break;
             case 6:
-                rotation = 90;
-                //GL11.glPushMatrix();
-                GL11.glRotatef(90.0F, 1.0F, 0.0F, 0.0F);
-                GL11.glTranslatef(0.0F, 0.0F, 1.0F);
-                //GL11.glPopMatrix();
-                GL11.glRotatef(rotation, 0.0F, 1.0F, 0.0F);
+                GL11.glTranslatef(0.0F, 1.0F, 0.0F);
+                GL11.glRotatef(90.0F, 0.0F, 0.0F, -1.0F);
+                GL11.glTranslatef(0.0F, -1.0F, 0.0F);
                 break;
             case 7:
-                rotation = 180;
-                //GL11.glPushMatrix();
-                GL11.glRotatef(90.0F, 1.0F, 0.0F, 0.0F);
-                GL11.glTranslatef(0.0F, 0.0F, 1.0F);
-                //GL11.glPopMatrix();
-                GL11.glRotatef(rotation, 0.0F, 1.0F, 0.0F);
+                GL11.glTranslatef(0.0F, 1.0F, 0.0F);
+                GL11.glRotatef(90.0F, -1.0F, 0.0F, 0.0F);
+                GL11.glTranslatef(0.0F, -1.0F, 0.0F);
                 break;
             case 8:
-                rotation = 270;
-                //GL11.glPushMatrix();
-                GL11.glRotatef(90.0F, 1.0F, 0.0F, 0.0F);
-                GL11.glTranslatef(0.0F, 0.0F, 1.0F);
-                //GL11.glPopMatrix();
-                GL11.glRotatef(rotation, 0.0F, 1.0F, 0.0F);
+                GL11.glTranslatef(0.0F, 1.0F, 0.0F);
+                GL11.glRotatef(90.0F, 0.0F, 0.0F, 1.0F);
+                GL11.glTranslatef(0.0F, -1.0F, 0.0F);
                 break;
 
             case 9:
                 rotation = 0;
-                //GL11.glPushMatrix();
-                GL11.glRotatef(90.0F, 1.0F, 0.0F, 0.0F);
-                GL11.glTranslatef(0.0F, 0.0F, 1.0F);
-                //GL11.glPopMatrix();
-                GL11.glRotatef(rotation, 0.0F, 1.0F, 0.0F);
+                GL11.glRotatef(180.0F, 1.0F, 0.0F, 0.0F);
+                GL11.glTranslatef(0.0F, -2.0F, 0.0F);
+                GL11.glRotatef(rotation, 0.0F, -1.0F, 0.0F);
                 break;
             case 10:
                 rotation = 90;
-                //GL11.glPushMatrix();
                 GL11.glRotatef(180.0F, 1.0F, 0.0F, 0.0F);
-                GL11.glTranslatef(0.0F, 1.0F, 0.0F);
-                //GL11.glPopMatrix();
-                GL11.glRotatef(rotation, 0.0F, 1.0F, 0.0F);
+                GL11.glTranslatef(0.0F, -2.0F, 0.0F);
+                GL11.glRotatef(rotation, 0.0F, -1.0F, 0.0F);
                 break;
             case 11:
                 rotation = 180;
-                //GL11.glPushMatrix();
                 GL11.glRotatef(180.0F, 1.0F, 0.0F, 0.0F);
-                GL11.glTranslatef(0.0F, 1.0F, 0.0F);
-                //GL11.glPopMatrix();
-                GL11.glRotatef(rotation, 0.0F, 1.0F, 0.0F);
+                GL11.glTranslatef(0.0F, -2.0F, 0.0F);
+                GL11.glRotatef(rotation, 0.0F, -1.0F, 0.0F);
                 break;
             case 12:
                 rotation = 270;
-                //GL11.glPushMatrix();
                 GL11.glRotatef(180.0F, 1.0F, 0.0F, 0.0F);
-                GL11.glTranslatef(0.0F, 1.0F, 0.0F);
-                //GL11.glPopMatrix();
-                GL11.glRotatef(rotation, 0.0F, 1.0F, 0.0F);
+                GL11.glTranslatef(0.0F, -2.0F, 0.0F);
+                GL11.glRotatef(rotation, 0.0F, -1.0F, 0.0F);
                 break;
         }
 

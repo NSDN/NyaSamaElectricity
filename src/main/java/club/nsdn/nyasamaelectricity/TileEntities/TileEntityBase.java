@@ -56,7 +56,7 @@ public class TileEntityBase extends BlockContainer {
         NyaSamaElectricity.console.print("[DEBUG] Pitch: ");
         NyaSamaElectricity.console.println(player.rotationPitch);
 
-        if (player.rotationPitch > 45.0F) {
+        if (player.rotationPitch > 30.0F) {
             if (l == 0)
             {
                 world.setBlockMetadataWithNotify(x, y, z, 1, 2);
@@ -76,7 +76,7 @@ public class TileEntityBase extends BlockContainer {
             {
                 world.setBlockMetadataWithNotify(x, y, z, 4, 2);
             }
-        } else if (player.rotationPitch > -45.0F) {
+        } else if (player.rotationPitch > -30.0F) {
             if (l == 0)
             {
                 world.setBlockMetadataWithNotify(x, y, z, 5, 2);

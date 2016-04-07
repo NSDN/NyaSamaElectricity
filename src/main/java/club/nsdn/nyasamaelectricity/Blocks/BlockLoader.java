@@ -17,6 +17,9 @@ public class BlockLoader {
     public static Block insulatorSquareBig;
     public static Block catenaryShelfHead;
     public static Block catenaryShelfBody;
+    public static Block catenaryShelfFoot;
+    public static Block catenaryShelfHeadNoInsulator;
+    public static Block catenaryShelfHeadTwin;
 
     private static void register(Block block, String name) {
         GameRegistry.registerBlock(block, name);
@@ -35,6 +38,12 @@ public class BlockLoader {
         register(catenaryShelfHead, "catenary_shelf_head_block");
         catenaryShelfBody = new TileEntityCatenaryShelfBody();
         register(catenaryShelfBody, "catenary_shelf_body_block");
+        catenaryShelfFoot = new TileEntityCatenaryShelfFoot();
+        register(catenaryShelfFoot, "catenary_shelf_foot_block");
+        catenaryShelfHeadNoInsulator = new TileEntityCatenaryShelfHeadNoInsulator();
+        register(catenaryShelfHeadNoInsulator, "catenary_shelf_head_no_insulator_block");
+        catenaryShelfHeadTwin = new TileEntityCatenaryShelfHeadTwin();
+        register(catenaryShelfHeadTwin, "catenary_shelf_head_twin_block");
     }
 
 }
