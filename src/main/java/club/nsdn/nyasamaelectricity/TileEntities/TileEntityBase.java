@@ -33,6 +33,18 @@ public class TileEntityBase extends BlockContainer {
         setCreativeTab(CreativeTabLoader.tabNyaSamaElectricity);
     }
 
+    public TileEntityBase(Material material, String blockName) {
+        super(material);
+        setBlockName(blockName);
+        setBlockTextureName("minecraft:quartz_block_side");
+        setIconLocation("minecraft:quartz_block_side");
+        setHardness(2.0F);
+        setLightLevel(0);
+        setStepSound(Block.soundTypeGlass);
+        setResistance(10.0F);
+        setCreativeTab(CreativeTabLoader.tabNyaSamaElectricity);
+    }
+
     public TileEntity createNewTileEntity(World world, int meta) {
         return new TileEntity();
     }
@@ -51,12 +63,7 @@ public class TileEntityBase extends BlockContainer {
     public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase player, ItemStack itemStack) {
         int l = MathHelper.floor_double((double)(player.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3;
 
-        NyaSamaElectricity.console.print("[DEBUG] Yaw: ");
-        NyaSamaElectricity.console.println(player.rotationYaw);
-        NyaSamaElectricity.console.print("[DEBUG] Pitch: ");
-        NyaSamaElectricity.console.println(player.rotationPitch);
-
-        if (player.rotationPitch > 30.0F) {
+        if (player.rotationPitch > 15.0F) {
             if (l == 0)
             {
                 world.setBlockMetadataWithNotify(x, y, z, 1, 2);
@@ -76,7 +83,7 @@ public class TileEntityBase extends BlockContainer {
             {
                 world.setBlockMetadataWithNotify(x, y, z, 4, 2);
             }
-        } else if (player.rotationPitch > -30.0F) {
+        } else if (player.rotationPitch > -15.0F) {
             if (l == 0)
             {
                 world.setBlockMetadataWithNotify(x, y, z, 5, 2);

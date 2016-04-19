@@ -9,18 +9,18 @@ import net.minecraft.block.material.Material;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 
-public class TileEntityCatenaryShelfHeadNoInsulatorThin extends TileEntityBase {
+public class TileEntityShelfQuad extends TileEntityBase {
 
-    public static class CatenaryShelfHeadNoInsulatorThin extends TileEntity { }
+    public static class ShelfQuad extends TileEntity { }
 
-    public TileEntityCatenaryShelfHeadNoInsulatorThin() {
-        super(Material.iron, "CatenaryShelfHeadNoInsulatorThin");
+    public TileEntityShelfQuad() {
+        super(Material.iron ,"ShelfQuad");
         setStepSound(Block.soundTypeMetal);
     }
 
     @Override
     public TileEntity createNewTileEntity(World world, int meta) {
-        return new CatenaryShelfHeadNoInsulatorThin();
+        return new ShelfQuad();
     }
 
 }

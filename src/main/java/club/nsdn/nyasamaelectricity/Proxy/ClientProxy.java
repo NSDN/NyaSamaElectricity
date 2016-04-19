@@ -5,7 +5,7 @@ package club.nsdn.nyasamaelectricity.Proxy;
  */
 
 import cpw.mods.fml.common.event.*;
-import club.nsdn.nyasamaelectricity.TileEntities.TileEntityLoader;
+import club.nsdn.nyasamaelectricity.TileEntities.TileEntityModelBinder;
 
 public class ClientProxy extends CommonProxy {
 
@@ -19,7 +19,7 @@ public class ClientProxy extends CommonProxy {
     public void init(FMLInitializationEvent event)
     {
         super.init(event);
-        new TileEntityLoader(event);
+        new TileEntityModelBinder(event);
     }
 
     @Override

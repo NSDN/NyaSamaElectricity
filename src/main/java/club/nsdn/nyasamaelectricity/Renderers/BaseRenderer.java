@@ -16,11 +16,11 @@ import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.renderer.OpenGlHelper;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 
-public class InsulatorRenderer extends TileEntitySpecialRenderer {
+public class BaseRenderer extends TileEntitySpecialRenderer {
 
     private final ModelBase model;
 
-    public InsulatorRenderer(ModelBase model) {
+    public BaseRenderer(ModelBase model) {
         this.model = model;
     }
 
@@ -86,16 +86,19 @@ public class InsulatorRenderer extends TileEntitySpecialRenderer {
                 GL11.glTranslatef(0.0F, 1.0F, 0.0F);
                 GL11.glRotatef(90.0F, 0.0F, 0.0F, -1.0F);
                 GL11.glTranslatef(0.0F, -1.0F, 0.0F);
+                GL11.glRotatef(90.0F, 0.0F, 1.0F, 0.0F);
                 break;
             case 7:
                 GL11.glTranslatef(0.0F, 1.0F, 0.0F);
                 GL11.glRotatef(90.0F, -1.0F, 0.0F, 0.0F);
                 GL11.glTranslatef(0.0F, -1.0F, 0.0F);
+                GL11.glRotatef(180.0F, 0.0F, 1.0F, 0.0F);
                 break;
             case 8:
                 GL11.glTranslatef(0.0F, 1.0F, 0.0F);
                 GL11.glRotatef(90.0F, 0.0F, 0.0F, 1.0F);
                 GL11.glTranslatef(0.0F, -1.0F, 0.0F);
+                GL11.glRotatef(270.0F, 0.0F, 1.0F, 0.0F);
                 break;
 
             case 9:

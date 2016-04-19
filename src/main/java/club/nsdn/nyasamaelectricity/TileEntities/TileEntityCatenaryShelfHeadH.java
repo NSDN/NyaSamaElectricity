@@ -6,21 +6,21 @@ package club.nsdn.nyasamaelectricity.TileEntities;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
+import net.minecraft.tileentity.TileEntity;
 
-public class TileEntityCatenaryShelfHeadThin extends TileEntityBase {
+public class TileEntityCatenaryShelfHeadH extends TileEntityBase {
 
-    public static class CatenaryShelfHeadThin extends TileEntity { }
+    public static class CatenaryShelfHeadH extends TileEntity { }
 
-    public TileEntityCatenaryShelfHeadThin() {
-        super(Material.iron, "CatenaryShelfHeadThin");
+    public TileEntityCatenaryShelfHeadH() {
+        super(Material.iron, "CatenaryShelfHeadH");
         setStepSound(Block.soundTypeMetal);
     }
 
     @Override
     public TileEntity createNewTileEntity(World world, int meta) {
-        return new CatenaryShelfHeadThin();
+        return new CatenaryShelfHeadH();
     }
 
 }

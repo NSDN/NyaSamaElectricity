@@ -8,6 +8,7 @@ import cpw.mods.fml.common.event.*;
 import club.nsdn.nyasamaelectricity.Items.ItemLoader;
 import club.nsdn.nyasamaelectricity.Blocks.BlockLoader;
 import club.nsdn.nyasamaelectricity.CreativeTab.CreativeTabLoader;
+import club.nsdn.nyasamaelectricity.TileEntities.TileEntityLoader;
 
 public class CommonProxy {
 
@@ -20,7 +21,7 @@ public class CommonProxy {
 
     public void init(FMLInitializationEvent event)
     {
-
+        new TileEntityLoader(event);
     }
 
     public void postInit(FMLPostInitializationEvent event)

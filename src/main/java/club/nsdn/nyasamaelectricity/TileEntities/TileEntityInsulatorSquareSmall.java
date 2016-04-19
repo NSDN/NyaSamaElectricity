@@ -13,7 +13,6 @@ public class TileEntityInsulatorSquareSmall extends TileEntityBase {
 
     public TileEntityInsulatorSquareSmall() {
         super("InsulatorSquareSmall");
-        //setIconLocation("nyasamaelectricity:insulator_square_small");
     }
 
     @Override
