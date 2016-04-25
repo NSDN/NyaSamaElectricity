@@ -29,6 +29,7 @@ public class BlockLoader {
     public static Block shelfQuadHead;
     public static Block shelfTriangle;
     public static Block shelfTriangleHead;
+    public static Block junkCatenaryShelf;
 
     private static void register(Block block, String name) {
         GameRegistry.registerBlock(block, name);
@@ -72,6 +73,8 @@ public class BlockLoader {
         register(shelfTriangle, "shelf_triangle_block");
         shelfTriangleHead = new TileEntityShelfTriangleHead();
         register(shelfTriangleHead, "shelf_triangle_head_block");
+        junkCatenaryShelf = new TileEntityJunkCatenaryShelf();
+        register(junkCatenaryShelf, "junk_catenary_shelf_block");
     }
 
 }

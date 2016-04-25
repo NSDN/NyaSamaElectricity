@@ -79,6 +79,10 @@ public class TileEntityModelBinder {
         ClientRegistry.bindTileEntitySpecialRenderer(
                 TileEntityShelfTriangleHead.ShelfTriangleHead.class,
                 new BaseRenderer(new ShelfTriangleHeadModel()));
+
+        ClientRegistry.bindTileEntitySpecialRenderer(
+                TileEntityJunkCatenaryShelf.JunkCatenaryShelf.class,
+                new BaseRenderer(new JunkCatenaryShelfModel()));
     }
 
 }

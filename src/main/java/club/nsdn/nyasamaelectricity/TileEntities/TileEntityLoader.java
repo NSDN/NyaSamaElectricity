@@ -78,6 +78,10 @@ public class TileEntityLoader {
         GameRegistry.registerTileEntity(
                 TileEntityShelfTriangleHead.ShelfTriangleHead.class,
                 "tileEntityShelfTriangleHead");
+
+        GameRegistry.registerTileEntity(
+                TileEntityJunkCatenaryShelf.JunkCatenaryShelf.class,
+                "tileEntityJunkCatenaryShelf");
     }
 
 }
