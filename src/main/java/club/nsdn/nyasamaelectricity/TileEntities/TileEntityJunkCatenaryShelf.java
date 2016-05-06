@@ -16,6 +16,7 @@ public class TileEntityJunkCatenaryShelf extends TileEntityBase {
     public TileEntityJunkCatenaryShelf() {
         super(Material.iron ,"JunkCatenaryShelf");
         setStepSound(Block.soundTypeMetal);
+        setIconLocation("junk_catenary_shelf");
     }
 
     @Override

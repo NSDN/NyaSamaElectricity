@@ -5,6 +5,7 @@ package club.nsdn.nyasamaelectricity.TileEntities;
  */
 
 import net.minecraft.block.Block;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.MathHelper;
@@ -19,7 +20,7 @@ import club.nsdn.nyasamaelectricity.CreativeTab.CreativeTabLoader;
 public class TileEntityBase extends BlockContainer {
 
     protected String textureLocation = "";
-    protected void setIconLocation(String textureLocation) { this.textureLocation = textureLocation; }
+    protected void setIconLocation(String textureLocation) { this.textureLocation = "nyasamaelectricity" + ":" + textureLocation; }
 
     public TileEntityBase(String blockName) {
         super(Material.glass);
@@ -59,11 +60,21 @@ public class TileEntityBase extends BlockContainer {
         return false;
     }
 
+    protected void setBoundsByMeta(int meta) {
+
+    }
+
+    @Override
+    public void setBlockBoundsBasedOnState(IBlockAccess w, int x, int y, int z) {
+        int meta = w.getBlockMetadata(x, y, z);
+        setBoundsByMeta(meta);
+    }
+
     @Override
     public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase player, ItemStack itemStack) {
         int l = MathHelper.floor_double((double)(player.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3;
 
-        if (player.rotationPitch > 15.0F) {
+        if (player.rotationPitch > 22.5F) {
             if (l == 0)
             {
                 world.setBlockMetadataWithNotify(x, y, z, 1, 2);
@@ -83,7 +94,7 @@ public class TileEntityBase extends BlockContainer {
             {
                 world.setBlockMetadataWithNotify(x, y, z, 4, 2);
             }
-        } else if (player.rotationPitch > -15.0F) {
+        } else if (player.rotationPitch > -22.5F) {
             if (l == 0)
             {
                 world.setBlockMetadataWithNotify(x, y, z, 5, 2);

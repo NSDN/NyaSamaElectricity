@@ -13,6 +13,7 @@ public class TileEntityInsulatorSquareMedium extends TileEntityBase {
 
     public TileEntityInsulatorSquareMedium() {
         super("InsulatorSquareMedium");
+        setIconLocation("insulator_square_medium");
     }
 
     @Override
@@ -20,5 +21,46 @@ public class TileEntityInsulatorSquareMedium extends TileEntityBase {
         return new InsulatorSquareMedium();
     }
 
-
+    @Override
+    protected void setBoundsByMeta(int meta) {
+        switch (meta % 13) {
+            case 1:
+                setBlockBounds(0.0625F, 0.0F, 0.0625F, 0.9375F, 1.0F, 0.9375F);
+                break;
+            case 2:
+                setBlockBounds(0.0625F, 0.0F, 0.0625F, 0.9375F, 1.0F, 0.9375F);
+                break;
+            case 3:
+                setBlockBounds(0.0625F, 0.0F, 0.0625F, 0.9375F, 1.0F, 0.9375F);
+                break;
+            case 4:
+                setBlockBounds(0.0625F, 0.0F, 0.0625F, 0.9375F, 1.0F, 0.9375F);
+                break;
+            case 5:
+                setBlockBounds(0.0625F, 0.0625F, 0.0F, 0.9375F, 0.9375F, 1.0F);
+                break;
+            case 6:
+                setBlockBounds(0.0625F, 0.0625F, 0.0F, 0.9375F, 0.9375F, 1.0F);
+                break;
+            case 7:
+                setBlockBounds(0.0625F, 0.0625F, 0.0F, 0.9375F, 0.9375F, 1.0F);
+                break;
+            case 8:
+                setBlockBounds(0.0625F, 0.0625F, 0.0F, 0.9375F, 0.9375F, 1.0F);
+                break;
+            case 9:
+                setBlockBounds(0.0625F, 0.0F, 0.0625F, 0.9375F, 1.0F, 0.9375F);
+                break;
+            case 10:
+                setBlockBounds(0.0625F, 0.0F, 0.0625F, 0.9375F, 1.0F, 0.9375F);
+                break;
+            case 11:
+                setBlockBounds(0.0625F, 0.0F, 0.0625F, 0.9375F, 1.0F, 0.9375F);
+                break;
+            case 12:
+                setBlockBounds(0.0625F, 0.0F, 0.0625F, 0.9375F, 1.0F, 0.9375F);
+                break;
+        }
+    }
+    
 }

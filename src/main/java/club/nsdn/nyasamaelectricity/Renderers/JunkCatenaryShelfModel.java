@@ -232,16 +232,16 @@ public class JunkCatenaryShelfModel extends ModelBase {
 
         Shape1 = new ModelRenderer(this, 0, 0);
         Shape1.addBox(0F, 0F, 0F, 2, 2, 2);
-        Shape1.setRotationPoint(-1F, 0F, 6F);
+        Shape1.setRotationPoint(-1F, -1F, 6F);
         Shape1.setTextureSize(24, 24);
         Shape1.mirror = true;
         setRotation(Shape1, 0F, 0F, 0F);
         Shape2 = new ModelRenderer(this, 0, 0);
-        Shape2.addBox(0F, 0F, 0F, 1, 1, 9);
+        Shape2.addBox(0F, 0F, 0F, 1, 1, 10);
         Shape2.setRotationPoint(-0.5F, 3.6F, -2.5F);
         Shape2.setTextureSize(24, 24);
         Shape2.mirror = true;
-        setRotation(Shape2, 0.3490659F, 0F, 0F);
+        setRotation(Shape2, 0.4363323F, 0F, 0F);
         Shape3 = new ModelRenderer(this, 0, 0);
         Shape3.addBox(0F, 0F, 0F, 1, 19, 1);
         Shape3.setRotationPoint(-0.5F, 3.5F, -3F);
@@ -249,14 +249,14 @@ public class JunkCatenaryShelfModel extends ModelBase {
         Shape3.mirror = true;
         setRotation(Shape3, -0.0279253F, 0F, 0F);
         Shape4 = new ModelRenderer(this, 0, 0);
-        Shape4.addBox(0F, 0F, 0F, 3, 3, 2);
-        Shape4.setRotationPoint(5F, 21F, 6F);
+        Shape4.addBox(0F, 0F, 0F, 3, 3, 3);
+        Shape4.setRotationPoint(5F, 21F, 5F);
         Shape4.setTextureSize(24, 24);
         Shape4.mirror = true;
         setRotation(Shape4, 0F, 0F, 0F);
         Shape5 = new ModelRenderer(this, 0, 0);
-        Shape5.addBox(0F, 0F, 0F, 3, 3, 2);
-        Shape5.setRotationPoint(-8F, 21F, 6F);
+        Shape5.addBox(0F, 0F, 0F, 3, 3, 3);
+        Shape5.setRotationPoint(-8F, 21F, 5F);
         Shape5.setTextureSize(24, 24);
         Shape5.mirror = true;
         setRotation(Shape5, 0F, 0F, 0F);

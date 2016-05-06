@@ -37,7 +37,7 @@ public class BlockLoader {
 
     public BlockLoader(FMLPreInitializationEvent event) {
         blockSign = new BlockSign();
-        register(blockSign, "block_sign");
+        register(blockSign, "nyasamaelectricity_block_sign");
         insulatorSquareSmall = new TileEntityInsulatorSquareSmall();
         register(insulatorSquareSmall, "insulator_square_small_block");
         insulatorSquareMedium = new TileEntityInsulatorSquareMedium();

@@ -6,19 +6,19 @@ package club.nsdn.nyasamaelectricity.Blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-//import club.nsdn.nyasamaelectricity.CreativeTab.CreativeTabLoader;
+import club.nsdn.nyasamaelectricity.CreativeTab.CreativeTabLoader;
 
 public class BlockSign extends Block {
 
     public BlockSign() {
         super(Material.glass);
-        setBlockName("BlockSign");
-        setBlockTextureName("minecraft:quartz_ore");
+        setBlockName("NyaSamaElectricityBlockSign");
+        setBlockTextureName("nyasamaelectricity:logo");
         setHardness(2.0F);
-        setLightLevel(0);
+        setLightLevel(1);
         setStepSound(Block.soundTypeGlass);
         setResistance(10.0F);
-        //setCreativeTab(CreativeTabLoader.tabNyaSamaElectricity);
+        setCreativeTab(CreativeTabLoader.tabNyaSamaElectricity);
     }
 
 }

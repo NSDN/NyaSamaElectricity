@@ -18,7 +18,7 @@ import java.io.FileOutputStream;
 public class NyaSamaElectricity {
 
     public static final String MODID = "NyaSamaElectricity";
-    public static final String VERSION = "0.3";
+    public static final String VERSION = "0.4";
     public static PrintStream console = new PrintStream(new FileOutputStream(FileDescriptor.out));
 
     @SidedProxy(clientSide = "club.nsdn.nyasamaelectricity.Proxy.ClientProxy",
