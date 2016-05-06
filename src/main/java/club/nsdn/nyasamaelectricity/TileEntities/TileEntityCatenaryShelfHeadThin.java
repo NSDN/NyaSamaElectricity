@@ -46,13 +46,13 @@ public class TileEntityCatenaryShelfHeadThin extends TileEntityBase {
                 setBlockBounds(0.375F, 0.25F, 0.0F, 0.625F, 0.75F, 1.0F);
                 break;
             case 6:
-                setBlockBounds(0.375F, 0.25F, 0.0F, 0.625F, 0.75F, 1.0F);
+                setBlockBounds(0.0F, 0.25F, 0.375F, 1.0F, 0.75F, 0.625F);
                 break;
             case 7:
                 setBlockBounds(0.375F, 0.25F, 0.0F, 0.625F, 0.75F, 1.0F);
                 break;
             case 8:
-                setBlockBounds(0.375F, 0.25F, 0.0F, 0.625F, 0.75F, 1.0F);
+                setBlockBounds(0.0F, 0.25F, 0.375F, 1.0F, 0.75F, 0.625F);
                 break;
             case 9:
                 setBlockBounds(0.375F, 0.0F, 0.25F, 0.625F, 1.0F, 0.75F);

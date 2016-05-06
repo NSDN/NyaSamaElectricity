@@ -47,13 +47,13 @@ public class TileEntityCatenaryShelfBodyH extends TileEntityBase {
                 setBlockBounds(0.375F, 0.3125F, 0.0F, 0.625F, 0.6875F, 1.0F);
                 break;
             case 6:
-                setBlockBounds(0.375F, 0.3125F, 0.0F, 0.625F, 0.6875F, 1.0F);
+                setBlockBounds(0.0F, 0.3125F, 0.375F, 1.0F, 0.6875F, 0.625F);
                 break;
             case 7:
                 setBlockBounds(0.375F, 0.3125F, 0.0F, 0.625F, 0.6875F, 1.0F);
                 break;
             case 8:
-                setBlockBounds(0.375F, 0.3125F, 0.0F, 0.625F, 0.6875F, 1.0F);
+                setBlockBounds(0.0F, 0.3125F, 0.375F, 1.0F, 0.6875F, 0.625F);
                 break;
             case 9:
                 setBlockBounds(0.375F, 0.0F, 0.3125F, 0.625F, 1.0F, 0.6875F);
