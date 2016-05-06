@@ -2,36 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7423ec30-32b0-49a4-a09b-424972be000f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Items/ItemInsulatorSquareSmall.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NyaSamaElectricity.iml" afterPath="$PROJECT_DIR$/NyaSamaElectricity.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Blocks/BlockLoader.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Blocks/BlockLoader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Blocks/BlockSign.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Blocks/BlockSign.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Items/ItemLoader.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Items/ItemLoader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/NyaSamaElectricity.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/NyaSamaElectricity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/JunkCatenaryShelfModel.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/Renderers/JunkCatenaryShelfModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityBase.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityBase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityCatenaryShelfBody.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityCatenaryShelfBody.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityCatenaryShelfBodyH.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityCatenaryShelfBodyH.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityCatenaryShelfFoot.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityCatenaryShelfFoot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityCatenaryShelfHeadH.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityCatenaryShelfHeadH.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityCatenaryShelfHeadNoInsulatorH.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityCatenaryShelfHeadNoInsulatorH.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityCatenaryShelfHeadNoInsulatorThin.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityCatenaryShelfHeadNoInsulatorThin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityCatenaryShelfHeadThin.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityCatenaryShelfHeadThin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityCatenaryShelfHeadTwinH.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityCatenaryShelfHeadTwinH.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityCatenaryShelfHeadTwinThin.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityCatenaryShelfHeadTwinThin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityInsulatorSquareBig.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityInsulatorSquareBig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityInsulatorSquareMedium.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityInsulatorSquareMedium.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityInsulatorSquareSmall.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityInsulatorSquareSmall.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityJunkCatenaryShelf.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityJunkCatenaryShelf.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityShelfConverter.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityShelfConverter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityShelfQuad.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityShelfQuad.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityShelfQuadHead.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityShelfQuadHead.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityShelfTriangle.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityShelfTriangle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityShelfTriangleHead.java" afterPath="$PROJECT_DIR$/src/main/java/club/nsdn/nyasamaelectricity/TileEntities/TileEntityShelfTriangleHead.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/nyasamaelectricity/lang/en_US.lang" afterPath="$PROJECT_DIR$/src/main/resources/assets/nyasamaelectricity/lang/en_US.lang" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/nyasamaelectricity/lang/zh_CN.lang" afterPath="$PROJECT_DIR$/src/main/resources/assets/nyasamaelectricity/lang/zh_CN.lang" />
     </list>
     <ignored path="NyaSamaElectricity.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -197,7 +169,7 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30107528">
+            <state vertical-scroll-proportion="0.45040214">
               <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
               <folding />
             </state>
@@ -532,7 +504,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="1461587094932" />
+        <entry key="$PROJECT_DIR$" value="1462517340831" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1574,7 +1546,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5040816" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959184" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31516185" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31516185" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25714287" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -2004,7 +1976,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30107528">
+        <state vertical-scroll-proportion="0.45040214">
           <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
           <folding />
         </state>
