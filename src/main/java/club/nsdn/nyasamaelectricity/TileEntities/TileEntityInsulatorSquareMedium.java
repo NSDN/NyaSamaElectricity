@@ -40,13 +40,13 @@ public class TileEntityInsulatorSquareMedium extends TileEntityBase {
                 setBlockBounds(0.0625F, 0.0625F, 0.0F, 0.9375F, 0.9375F, 1.0F);
                 break;
             case 6:
-                setBlockBounds(0.0625F, 0.0625F, 0.0F, 0.9375F, 0.9375F, 1.0F);
+                setBlockBounds(0.0F, 0.0625F, 0.0625F, 1.0F, 0.9375F, 0.9375F);
                 break;
             case 7:
                 setBlockBounds(0.0625F, 0.0625F, 0.0F, 0.9375F, 0.9375F, 1.0F);
                 break;
             case 8:
-                setBlockBounds(0.0625F, 0.0625F, 0.0F, 0.9375F, 0.9375F, 1.0F);
+                setBlockBounds(0.0F, 0.0625F, 0.0625F, 1.0F, 0.9375F, 0.9375F);
                 break;
             case 9:
                 setBlockBounds(0.0625F, 0.0F, 0.0625F, 0.9375F, 1.0F, 0.9375F);

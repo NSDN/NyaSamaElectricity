@@ -26,63 +26,95 @@ public class TileEntityModelBinder {
 
         ClientRegistry.bindTileEntitySpecialRenderer(
                 TileEntityCatenaryShelfBody.CatenaryShelfBody.class,
-                new BaseRenderer(new CatenaryShelfBodyModel()));
+                new BaseRenderer(new CatenaryShelfBodyModel(), "textures/blocks/ConcreteWall.png"));
 
         ClientRegistry.bindTileEntitySpecialRenderer(
                 TileEntityCatenaryShelfBodyH.CatenaryShelfBodyH.class,
-                new BaseRenderer(new CatenaryShelfBodyHModel()));
+                new BaseRenderer(new CatenaryShelfBodyHModel(), "textures/blocks/BrushedAluminum.png"));
 
         ClientRegistry.bindTileEntitySpecialRenderer(
                 TileEntityCatenaryShelfHeadH.CatenaryShelfHeadH.class,
-                new BaseRenderer(new CatenaryShelfHeadHModel()));
+                new BaseRenderer(new CatenaryShelfHeadHModel(), "textures/blocks/BrushedAluminum.png"));
 
         ClientRegistry.bindTileEntitySpecialRenderer(
                 TileEntityCatenaryShelfFoot.CatenaryShelfFoot.class,
-                new BaseRenderer(new CatenaryShelfFootModel()));
+                new BaseRenderer(new CatenaryShelfFootModel(), "textures/blocks/ConcreteWall.png"));
 
         ClientRegistry.bindTileEntitySpecialRenderer(
                 TileEntityCatenaryShelfHeadNoInsulatorH.CatenaryShelfHeadNoInsulatorH.class,
-                new BaseRenderer(new CatenaryShelfHeadNoInsulatorHModel()));
+                new BaseRenderer(new CatenaryShelfHeadNoInsulatorHModel(), "textures/blocks/BrushedAluminum.png"));
 
         ClientRegistry.bindTileEntitySpecialRenderer(
                 TileEntityCatenaryShelfHeadTwinH.CatenaryShelfHeadTwinH.class,
-                new BaseRenderer(new CatenaryShelfHeadTwinHModel()));
+                new BaseRenderer(new CatenaryShelfHeadTwinHModel(), "textures/blocks/BrushedAluminum.png"));
 
         ClientRegistry.bindTileEntitySpecialRenderer(
                 TileEntityCatenaryShelfHeadThin.CatenaryShelfHeadThin.class,
-                new BaseRenderer(new CatenaryShelfHeadThinModel()));
+                new BaseRenderer(new CatenaryShelfHeadThinModel(), "textures/blocks/ConcreteWall.png"));
 
         ClientRegistry.bindTileEntitySpecialRenderer(
                 TileEntityCatenaryShelfHeadNoInsulatorThin.CatenaryShelfHeadNoInsulatorThin.class,
-                new BaseRenderer(new CatenaryShelfHeadNoInsulatorThinModel()));
+                new BaseRenderer(new CatenaryShelfHeadNoInsulatorThinModel(), "textures/blocks/ConcreteWall.png"));
 
         ClientRegistry.bindTileEntitySpecialRenderer(
                 TileEntityCatenaryShelfHeadTwinThin.CatenaryShelfHeadTwinThin.class,
-                new BaseRenderer(new CatenaryShelfHeadTwinThinModel()));
+                new BaseRenderer(new CatenaryShelfHeadTwinThinModel(), "textures/blocks/ConcreteWall.png"));
 
         ClientRegistry.bindTileEntitySpecialRenderer(
                 TileEntityShelfConverter.ShelfConverter.class,
-                new BaseRenderer(new ShelfConverterModel()));
+                new BaseRenderer(new ShelfConverterModel(), "textures/blocks/BrushedAluminum.png"));
 
         ClientRegistry.bindTileEntitySpecialRenderer(
                 TileEntityShelfQuad.ShelfQuad.class,
-                new BaseRenderer(new ShelfQuadModel()));
+                new BaseRenderer(new ShelfQuadModel(), "textures/blocks/BrushedAluminum.png"));
 
         ClientRegistry.bindTileEntitySpecialRenderer(
                 TileEntityShelfQuadHead.ShelfQuadHead.class,
-                new BaseRenderer(new ShelfQuadHeadModel()));
+                new BaseRenderer(new ShelfQuadHeadModel(), "textures/blocks/BrushedAluminum.png"));
 
         ClientRegistry.bindTileEntitySpecialRenderer(
                 TileEntityShelfTriangle.ShelfTriangle.class,
-                new BaseRenderer(new ShelfTriangleModel()));
+                new BaseRenderer(new ShelfTriangleModel(), "textures/blocks/BrushedAluminum.png"));
 
         ClientRegistry.bindTileEntitySpecialRenderer(
                 TileEntityShelfTriangleHead.ShelfTriangleHead.class,
-                new BaseRenderer(new ShelfTriangleHeadModel()));
+                new BaseRenderer(new ShelfTriangleHeadModel(), "textures/blocks/BrushedAluminum.png"));
 
         ClientRegistry.bindTileEntitySpecialRenderer(
                 TileEntityJunkCatenaryShelf.JunkCatenaryShelf.class,
-                new BaseRenderer(new JunkCatenaryShelfModel()));
+                new BaseRenderer(new JunkCatenaryShelfModel(), "textures/blocks/BrushedAluminum.png"));
+
+        ClientRegistry.bindTileEntitySpecialRenderer(
+                TileEntityShelfQuadThin.ShelfQuadThin.class,
+                new BaseRenderer(new ShelfQuadThinModel(), "textures/blocks/BrushedAluminum.png"));
+
+        ClientRegistry.bindTileEntitySpecialRenderer(
+                TileEntityShelfQuadConverter.ShelfQuadConverter.class,
+                new BaseRenderer(new ShelfQuadConverterModel(), "textures/blocks/BrushedAluminum.png"));
+
+        ClientRegistry.bindTileEntitySpecialRenderer(
+                TileEntityShelfQuadThinConnector.ShelfQuadThinConnector.class,
+                new BaseRenderer(new ShelfQuadThinConnectorModel(), "textures/blocks/BrushedAluminum.png"));
+
+        ClientRegistry.bindTileEntitySpecialRenderer(
+                TileEntityCatenaryShelfQuadThinHead.CatenaryShelfQuadThinHead.class,
+                new BaseRenderer(new CatenaryShelfQuadThinHeadModel(false), "textures/blocks/BrushedAluminum.png"));
+
+        ClientRegistry.bindTileEntitySpecialRenderer(
+                TileEntityCatenaryShelfQuadThinHeadTwin.CatenaryShelfQuadThinHeadTwin.class,
+                new BaseRenderer(new CatenaryShelfQuadThinHeadModel(true), "textures/blocks/BrushedAluminum.png"));
+
+        ClientRegistry.bindTileEntitySpecialRenderer(
+                TileEntityHVDangerSignA.HVDangerSignA.class,
+                new BaseRenderer(new HVDangerSignModel(), "textures/blocks/hv_danger_a.png"));
+
+        ClientRegistry.bindTileEntitySpecialRenderer(
+                TileEntityHVDangerSignB.HVDangerSignB.class,
+                new BaseRenderer(new HVDangerSignModel(), "textures/blocks/hv_danger_b.png"));
+
+        ClientRegistry.bindTileEntitySpecialRenderer(
+                TileEntityParticleSystem.ParticlesSystem.class,
+                new BaseRenderer(new ParticleSystemModel(), "textures/blocks/particle.png"));
     }
 
 }

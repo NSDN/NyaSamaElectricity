@@ -12,6 +12,8 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 public class BlockLoader {
 
     public static Block blockSign;
+    public static Block blockNSDNLogo;
+    public static Block blockNyaSamaElectricityLogo;
     public static Block insulatorSquareSmall;
     public static Block insulatorSquareMedium;
     public static Block insulatorSquareBig;
@@ -30,6 +32,14 @@ public class BlockLoader {
     public static Block shelfTriangle;
     public static Block shelfTriangleHead;
     public static Block junkCatenaryShelf;
+    public static Block shelfQuadThin;
+    public static Block shelfQuadConverter;
+    public static Block shelfQuadThinConnector;
+    public static Block catenaryShelfQuadThinHead;
+    public static Block catenaryShelfQuadThinHeadTwin;
+    public static Block hvDangerSignA;
+    public static Block hvDangerSignB;
+    public static Block particleSystem;
 
     private static void register(Block block, String name) {
         GameRegistry.registerBlock(block, name);
@@ -38,6 +48,10 @@ public class BlockLoader {
     public BlockLoader(FMLPreInitializationEvent event) {
         blockSign = new BlockSign();
         register(blockSign, "nyasamaelectricity_block_sign");
+        blockNSDNLogo = new BlockNSDNLogo();
+        register(blockNSDNLogo, "nyasamaelectricity_nsdn_logo");
+        blockNyaSamaElectricityLogo = new BlockNyaSamaElectricityLogo();
+        register(blockNyaSamaElectricityLogo, "nyasamaelectricity_logo");
         insulatorSquareSmall = new TileEntityInsulatorSquareSmall();
         register(insulatorSquareSmall, "insulator_square_small_block");
         insulatorSquareMedium = new TileEntityInsulatorSquareMedium();
@@ -62,6 +76,10 @@ public class BlockLoader {
         register(catenaryShelfHeadNoInsulatorThin, "catenary_shelf_head_no_insulator_thin_block");
         catenaryShelfHeadTwinThin = new TileEntityCatenaryShelfHeadTwinThin();
         register(catenaryShelfHeadTwinThin, "catenary_shelf_head_twin_thin_block");
+        catenaryShelfQuadThinHead = new TileEntityCatenaryShelfQuadThinHead();
+        register(catenaryShelfQuadThinHead, "catenary_shelf_quad_thin_head_block");
+        catenaryShelfQuadThinHeadTwin = new TileEntityCatenaryShelfQuadThinHeadTwin();
+        register(catenaryShelfQuadThinHeadTwin, "catenary_shelf_quad_thin_head_twin_block");
 
         shelfConverter = new TileEntityShelfConverter();
         register(shelfConverter, "shelf_converter_block");
@@ -73,8 +91,23 @@ public class BlockLoader {
         register(shelfTriangle, "shelf_triangle_block");
         shelfTriangleHead = new TileEntityShelfTriangleHead();
         register(shelfTriangleHead, "shelf_triangle_head_block");
+        shelfQuadThin = new TileEntityShelfQuadThin();
+        register(shelfQuadThin, "shelf_quad_thin_block");
+        shelfQuadConverter = new TileEntityShelfQuadConverter();
+        register(shelfQuadConverter, "shelf_quad_converter_block");
+        shelfQuadThinConnector = new TileEntityShelfQuadThinConnector();
+        register(shelfQuadThinConnector, "shelf_quad_thin_connector_block");
         junkCatenaryShelf = new TileEntityJunkCatenaryShelf();
         register(junkCatenaryShelf, "junk_catenary_shelf_block");
+
+        hvDangerSignA = new TileEntityHVDangerSignA();
+        register(hvDangerSignA, "hv_danger_sign_a_block");
+
+        hvDangerSignB = new TileEntityHVDangerSignB();
+        register(hvDangerSignB, "hv_danger_sign_b_block");
+
+        particleSystem = new TileEntityParticleSystem();
+        register(particleSystem, "particle_system_block");
     }
 
 }

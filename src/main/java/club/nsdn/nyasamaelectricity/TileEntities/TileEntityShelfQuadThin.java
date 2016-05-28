@@ -4,21 +4,26 @@ package club.nsdn.nyasamaelectricity.TileEntities;
  * Created by drzzm32 on 2016.3.25.
  */
 
-import net.minecraft.world.World;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.IBlockAccess;
+import net.minecraft.world.World;
+import net.minecraftforge.common.util.ForgeDirection;
 
-public class TileEntityInsulatorSquareSmall extends TileEntityBase {
+public class TileEntityShelfQuadThin extends TileEntityBase {
 
-    public static class InsulatorSquareSmall extends TileEntity { }
+    public static class ShelfQuadThin extends TileEntity { }
 
-    public TileEntityInsulatorSquareSmall() {
-        super("InsulatorSquareSmall");
-        setIconLocation("insulator_square_small");
+    public TileEntityShelfQuadThin() {
+        super(Material.iron, "ShelfQuadThin");
+        setStepSound(Block.soundTypeMetal);
+        setIconLocation("shelf_quad_thin");
     }
 
     @Override
     public TileEntity createNewTileEntity(World world, int meta) {
-        return new InsulatorSquareSmall();
+        return new ShelfQuadThin();
     }
 
     @Override
@@ -61,6 +66,12 @@ public class TileEntityInsulatorSquareSmall extends TileEntityBase {
                 setBlockBounds(0.25F, 0.0F, 0.25F, 0.75F, 1.0F, 0.75F);
                 break;
         }
+    }
+
+    @Override
+    public boolean isSideSolid(IBlockAccess world, int x, int y, int z, ForgeDirection side)
+    {
+        return side == ForgeDirection.UP;
     }
 
 }

@@ -11,12 +11,15 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 public class ItemLoader {
 
+    public static Item itemNyaSamaElectricityLogo;
+
     private static void register(Item item, String name) {
         GameRegistry.registerItem(item, name);
     }
 
     public ItemLoader(FMLPreInitializationEvent event) {
-
+        //itemNyaSamaElectricityLogo = new ItemNyaSamaElectricityLogo();
+        //register(itemNyaSamaElectricityLogo, "logo_nyasama_electricity");
 
     }
 }

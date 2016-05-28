@@ -4,6 +4,7 @@ package club.nsdn.nyasamaelectricity.CreativeTab;
  * Created by drzzm32 on 2016.3.25.
  */
 
+import club.nsdn.nyasamaelectricity.Items.ItemLoader;
 import net.minecraft.item.Item;
 import cpw.mods.fml.common.event.*;
 import net.minecraft.creativetab.CreativeTabs;
@@ -17,7 +18,7 @@ public class CreativeTabLoader {
         tabNyaSamaElectricity = new CreativeTabs("tabNyaSamaElectricity") {
             @Override
             public Item getTabIconItem() {
-                return Item.getItemFromBlock(BlockLoader.blockSign);
+                return Item.getItemFromBlock(BlockLoader.blockNyaSamaElectricityLogo);
             }
         };
     }

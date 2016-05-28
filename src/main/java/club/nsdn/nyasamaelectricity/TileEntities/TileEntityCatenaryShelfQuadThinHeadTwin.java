@@ -4,21 +4,24 @@ package club.nsdn.nyasamaelectricity.TileEntities;
  * Created by drzzm32 on 2016.3.25.
  */
 
-import net.minecraft.world.World;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.World;
 
-public class TileEntityInsulatorSquareSmall extends TileEntityBase {
+public class TileEntityCatenaryShelfQuadThinHeadTwin extends TileEntityBase {
 
-    public static class InsulatorSquareSmall extends TileEntity { }
+    public static class CatenaryShelfQuadThinHeadTwin extends TileEntity { }
 
-    public TileEntityInsulatorSquareSmall() {
-        super("InsulatorSquareSmall");
-        setIconLocation("insulator_square_small");
+    public TileEntityCatenaryShelfQuadThinHeadTwin() {
+        super(Material.iron, "CatenaryShelfQuadThinHeadTwin");
+        setStepSound(Block.soundTypeMetal);
+        setIconLocation("catenary_shelf_quad_thin_head_twin");
     }
 
     @Override
     public TileEntity createNewTileEntity(World world, int meta) {
-        return new InsulatorSquareSmall();
+        return new CatenaryShelfQuadThinHeadTwin();
     }
 
     @Override

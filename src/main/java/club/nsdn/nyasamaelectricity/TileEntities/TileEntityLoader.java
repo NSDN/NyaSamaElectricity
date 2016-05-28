@@ -82,6 +82,38 @@ public class TileEntityLoader {
         GameRegistry.registerTileEntity(
                 TileEntityJunkCatenaryShelf.JunkCatenaryShelf.class,
                 "tileEntityJunkCatenaryShelf");
+
+        GameRegistry.registerTileEntity(
+                TileEntityShelfQuadThin.ShelfQuadThin.class,
+                "tileEntityShelfQuadThin");
+
+        GameRegistry.registerTileEntity(
+                TileEntityShelfQuadConverter.ShelfQuadConverter.class,
+                "tileEntityShelfQuadConverter");
+
+        GameRegistry.registerTileEntity(
+                TileEntityShelfQuadThinConnector.ShelfQuadThinConnector.class,
+                "tileEntityShelfQuadThinConnector");
+
+        GameRegistry.registerTileEntity(
+                TileEntityCatenaryShelfQuadThinHead.CatenaryShelfQuadThinHead.class,
+                "tileEntityCatenaryShelfQuadThinHead");
+
+        GameRegistry.registerTileEntity(
+                TileEntityCatenaryShelfQuadThinHeadTwin.CatenaryShelfQuadThinHeadTwin.class,
+                "tileEntityCatenaryShelfQuadThinHeadTwin");
+
+        GameRegistry.registerTileEntity(
+                TileEntityHVDangerSignA.HVDangerSignA.class,
+                "tileEntityHVDangerSignA");
+
+        GameRegistry.registerTileEntity(
+                TileEntityHVDangerSignB.HVDangerSignB.class,
+                "tileEntityHVDangerSignB");
+
+        GameRegistry.registerTileEntity(
+                TileEntityParticleSystem.ParticlesSystem.class,
+                "tileEntityParticleSystem");
     }
 
 }

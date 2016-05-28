@@ -12,6 +12,7 @@ public class ClientProxy extends CommonProxy {
     @Override
     public void preInit(FMLPreInitializationEvent event)
     {
+        org.lwjgl.opengl.Display.setTitle("moded Minecraft by NSDN-MC ver1.0");
         super.preInit(event);
     }
 
