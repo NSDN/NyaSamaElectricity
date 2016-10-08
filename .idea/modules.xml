@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/NyaSamaElectricity.iml" filepath="$PROJECT_DIR$/NyaSamaElectricity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NyaSamaElectricity.iml" filepath="$PROJECT_DIR$/.idea/modules/NyaSamaElectricity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NyaSamaElectricity_api.iml" filepath="$PROJECT_DIR$/.idea/modules/NyaSamaElectricity_api.iml" group="NyaSamaElectricity" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NyaSamaElectricity_main.iml" filepath="$PROJECT_DIR$/.idea/modules/NyaSamaElectricity_main.iml" group="NyaSamaElectricity" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NyaSamaElectricity_test.iml" filepath="$PROJECT_DIR$/.idea/modules/NyaSamaElectricity_test.iml" group="NyaSamaElectricity" />
     </modules>
   </component>
 </project>

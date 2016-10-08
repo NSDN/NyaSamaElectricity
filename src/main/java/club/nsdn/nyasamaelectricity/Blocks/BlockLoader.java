@@ -26,6 +26,11 @@ public class BlockLoader {
     public static Block catenaryShelfHeadThin;
     public static Block catenaryShelfHeadNoInsulatorThin;
     public static Block catenaryShelfHeadTwinThin;
+    public static Block catenaryShelfArmShort;
+    public static Block catenaryShelfArmLong;
+    public static Block catenaryShelfHead;
+    public static Block catenaryShelfInsulator;
+
     public static Block shelfConverter;
     public static Block shelfQuad;
     public static Block shelfQuadHead;
@@ -80,6 +85,14 @@ public class BlockLoader {
         register(catenaryShelfQuadThinHead, "catenary_shelf_quad_thin_head_block");
         catenaryShelfQuadThinHeadTwin = new TileEntityCatenaryShelfQuadThinHeadTwin();
         register(catenaryShelfQuadThinHeadTwin, "catenary_shelf_quad_thin_head_twin_block");
+        catenaryShelfArmShort = new TileEntityCatenaryShelfArmShort();
+        register(catenaryShelfArmShort, "catenary_shelf_short");
+        catenaryShelfArmLong = new TileEntityCatenaryShelfArmLong();
+        register(catenaryShelfArmLong, "catenary_shelf_long");
+        catenaryShelfHead = new TileEntityCatenaryShelfHead();
+        register(catenaryShelfHead, "catenary_shelf_head_block");
+        catenaryShelfInsulator = new TileEntityCatenaryShelfInsulator();
+        register(catenaryShelfInsulator, "catenary_shelf_insulator_block");
 
         shelfConverter = new TileEntityShelfConverter();
         register(shelfConverter, "shelf_converter_block");
@@ -106,8 +119,8 @@ public class BlockLoader {
         hvDangerSignB = new TileEntityHVDangerSignB();
         register(hvDangerSignB, "hv_danger_sign_b_block");
 
-        particleSystem = new TileEntityParticleSystem();
-        register(particleSystem, "particle_system_block");
+        //particleSystem = new TileEntityParticleSystem();
+        //register(particleSystem, "particle_system_block");
     }
 
 }

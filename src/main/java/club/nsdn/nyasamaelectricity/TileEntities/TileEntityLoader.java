@@ -60,6 +60,22 @@ public class TileEntityLoader {
                 "tileEntityCatenaryShelfHeadTwinThin");
 
         GameRegistry.registerTileEntity(
+                TileEntityCatenaryShelfArmShort.CatenaryShelfArmShort.class,
+                "tileEntityCatenaryShelfArmShort");
+
+        GameRegistry.registerTileEntity(
+                TileEntityCatenaryShelfArmLong.CatenaryShelfArmLong.class,
+                "tileEntityCatenaryShelfArmLong");
+
+        GameRegistry.registerTileEntity(
+                TileEntityCatenaryShelfHead.CatenaryShelfHead.class,
+                "tileEntityCatenaryShelfHead");
+
+        GameRegistry.registerTileEntity(
+                TileEntityCatenaryShelfInsulator.CatenaryShelfInsulator.class,
+                "tileEntityCatenaryShelfInsulator");
+
+        GameRegistry.registerTileEntity(
                 TileEntityShelfConverter.ShelfConverter.class,
                 "tileEntityShelfConverter");
 

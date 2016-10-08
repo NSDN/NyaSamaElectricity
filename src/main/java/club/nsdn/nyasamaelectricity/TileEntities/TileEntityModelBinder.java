@@ -105,6 +105,22 @@ public class TileEntityModelBinder {
                 new BaseRenderer(new CatenaryShelfQuadThinHeadModel(true), "textures/blocks/BrushedAluminum.png"));
 
         ClientRegistry.bindTileEntitySpecialRenderer(
+                TileEntityCatenaryShelfArmShort.CatenaryShelfArmShort.class,
+                new BaseRenderer(new CatenaryShelfArmShortModel(), "textures/blocks/BrushedAluminum.png"));
+
+        ClientRegistry.bindTileEntitySpecialRenderer(
+                TileEntityCatenaryShelfArmLong.CatenaryShelfArmLong.class,
+                new BaseRenderer(new CatenaryShelfArmLongModel(), "textures/blocks/BrushedAluminum.png"));
+
+        ClientRegistry.bindTileEntitySpecialRenderer(
+                TileEntityCatenaryShelfHead.CatenaryShelfHead.class,
+                new BaseRenderer(new CatenaryShelfHeadModel(), "textures/blocks/ConcreteWall.png"));
+
+        ClientRegistry.bindTileEntitySpecialRenderer(
+                TileEntityCatenaryShelfInsulator.CatenaryShelfInsulator.class,
+                new BaseRenderer(new CatenaryShelfInsulatorModel(), "textures/blocks/BrushedAluminum.png"));
+
+        ClientRegistry.bindTileEntitySpecialRenderer(
                 TileEntityHVDangerSignA.HVDangerSignA.class,
                 new BaseRenderer(new HVDangerSignModel(), "textures/blocks/hv_danger_a.png"));
 
