@@ -10,4 +10,4 @@ Modelling with Techne
 Real electricity grid
 
 ## Other
-Copyright (C) NSDN 2014 - 2016
+Copyright (C) NSDN 2014 - 2017
