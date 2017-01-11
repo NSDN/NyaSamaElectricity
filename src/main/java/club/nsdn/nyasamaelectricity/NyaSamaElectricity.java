@@ -9,6 +9,8 @@ import cpw.mods.fml.common.event.*;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.Mod.EventHandler;
 import club.nsdn.nyasamaelectricity.Proxy.CommonProxy;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.PrintStream;
 import java.io.FileDescriptor;
@@ -19,10 +21,10 @@ public class NyaSamaElectricity {
 
     public static final String MODID = "NyaSamaElectricity";
     public static final String VERSION = "0.4";
-    public static PrintStream console = new PrintStream(new FileOutputStream(FileDescriptor.out));
+    public static Logger log = LogManager.getLogger(MODID);
 
     @SidedProxy(clientSide = "club.nsdn.nyasamaelectricity.Proxy.ClientProxy",
-                serverSide = "club.nsdn.nyasamaelectricity.Proxy.CommonProxy")
+                serverSide = "club.nsdn.nyasamaelectricity.Proxy.ServerProxy")
     public static CommonProxy proxy;
 
     @EventHandler
