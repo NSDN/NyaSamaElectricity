@@ -81,7 +81,7 @@ public class TileEntityBase extends BlockContainer {
     @SideOnly(Side.CLIENT)
     public AxisAlignedBB getSelectedBoundingBoxFromPool(World world, int x, int y, int z) {
         this.setBlockBoundsBasedOnState(world, x, y, z);
-        return super.getSelectedBoundingBoxFromPool(world, x, y, z);
+        return AxisAlignedBB.getBoundingBox(x + this.minX, y + this.minY, z + this.minZ, x + this.maxX, y + this.maxY, z + this.maxZ);
     }
 
     @Override

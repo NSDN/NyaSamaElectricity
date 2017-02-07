@@ -4,6 +4,7 @@ package club.nsdn.nyasamaelectricity.Renderers;
  * Created by drzzm32 on 2016.3.25.
  */
 
+import net.minecraft.client.renderer.RenderHelper;
 import org.lwjgl.opengl.GL11;
 import net.minecraft.block.Block;
 import net.minecraft.world.World;
@@ -48,6 +49,20 @@ public class BaseRenderer extends TileEntitySpecialRenderer {
         else
             textures = (new ResourceLocation("nyasamaelectricity", texturePath));
         Minecraft.getMinecraft().renderEngine.bindTexture(textures);
+
+        RenderHelper.disableStandardItemLighting();
+        GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
+        GL11.glEnable(GL11.GL_BLEND);
+        GL11.glDisable(GL11.GL_CULL_FACE);
+
+        if (Minecraft.isAmbientOcclusionEnabled())
+        {
+            GL11.glShadeModel(GL11.GL_SMOOTH);
+        }
+        else
+        {
+            GL11.glShadeModel(GL11.GL_FLAT);
+        }
 
         Tessellator.instance.setColorOpaque_F(1.0F, 1.0F, 1.0F);
 
@@ -125,6 +140,9 @@ public class BaseRenderer extends TileEntitySpecialRenderer {
 
         this.model.render((Entity) null, 0.0F, 0.0F, -0.1F, 0.0F, 0.0F, 0.0625F);
         GL11.glPopMatrix();
+
+        RenderHelper.enableStandardItemLighting();
+
         GL11.glPopMatrix();
     }
 
