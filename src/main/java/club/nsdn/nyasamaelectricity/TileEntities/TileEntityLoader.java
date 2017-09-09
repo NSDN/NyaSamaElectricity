@@ -128,8 +128,8 @@ public class TileEntityLoader {
                 "tileEntityHVDangerSignB");
 
         GameRegistry.registerTileEntity(
-                TileEntityParticleSystem.ParticlesSystem.class,
-                "tileEntityParticleSystem");
+                TileEntityWire.Wire.class,
+                "tileEntityWire");
     }
 
 }

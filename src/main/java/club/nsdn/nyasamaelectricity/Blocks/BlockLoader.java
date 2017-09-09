@@ -44,7 +44,7 @@ public class BlockLoader {
     public static Block catenaryShelfQuadThinHeadTwin;
     public static Block hvDangerSignA;
     public static Block hvDangerSignB;
-    public static Block particleSystem;
+    public static Block blockWire;
 
     private static void register(Block block, String name) {
         GameRegistry.registerBlock(block, name);
@@ -119,8 +119,8 @@ public class BlockLoader {
         hvDangerSignB = new TileEntityHVDangerSignB();
         register(hvDangerSignB, "hv_danger_sign_b_block");
 
-        //particleSystem = new TileEntityParticleSystem();
-        //register(particleSystem, "particle_system_block");
+        blockWire = new TileEntityWire();
+        register(blockWire, "wire_block");
     }
 
 }

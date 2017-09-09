@@ -25,7 +25,7 @@ import java.util.List;
  */
 public class TileEntityWire extends BlockRailBase implements ITileEntityProvider {
 
-    public static class TileEntityRail extends TileEntity {
+    public static class Wire extends TileEntity {
 
         @Override
         @SideOnly(Side.CLIENT)
@@ -42,12 +42,12 @@ public class TileEntityWire extends BlockRailBase implements ITileEntityProvider
         super(false);
         this.isBlockContainer = true;
         setBlockName("Wire");
-        setIconLocation("wire");
+        setIconLocation("block_wire");
         setCreativeTab(CreativeTabLoader.tabNyaSamaElectricity);
     }
 
     protected String textureLocation = "";
-    protected void setIconLocation(String textureLocation) { this.textureLocation = "nyasamarailway" + ":" + textureLocation; }
+    protected void setIconLocation(String textureLocation) { this.textureLocation = "nyasamaelectricity" + ":" + textureLocation; }
 
     @Override
     public Material getMaterial() {
@@ -102,7 +102,7 @@ public class TileEntityWire extends BlockRailBase implements ITileEntityProvider
 
     @Override
     public TileEntity createNewTileEntity(World world, int meta) {
-        return new TileEntityRail();
+        return new Wire();
     }
 
     @Override
@@ -127,7 +127,7 @@ public class TileEntityWire extends BlockRailBase implements ITileEntityProvider
         }
         else
         {
-            this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 0.75F, 1.0F);
+            this.setBlockBounds(0.0F, 0.5F, 0.0F, 1.0F, 1.0F, 1.0F);
         }
     }
 

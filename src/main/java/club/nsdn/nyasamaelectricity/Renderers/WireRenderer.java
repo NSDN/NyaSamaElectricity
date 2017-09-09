@@ -20,30 +20,15 @@ public class WireRenderer extends TileEntitySpecialRenderer {
 
     public WireRenderer() {
         this.model = new WavefrontObject[]{
-                new WavefrontObject(new ResourceLocation("nyasamarailway", "models/rails/mono_rail_straight.obj")),
-                new WavefrontObject(new ResourceLocation("nyasamarailway", "models/rails/mono_rail_slope.obj")),
-                new WavefrontObject(new ResourceLocation("nyasamarailway", "models/rails/mono_rail_turned.obj"))
+                new WavefrontObject(new ResourceLocation("nyasamaelectricity", "models/blocks/wire_straight.obj")),
+                new WavefrontObject(new ResourceLocation("nyasamaelectricity", "models/blocks/wire_slope.obj")),
+                new WavefrontObject(new ResourceLocation("nyasamaelectricity", "models/blocks/wire_turned.obj"))
         };
         this.textures = new ResourceLocation[]{
-                new ResourceLocation("nyasamarailway", "textures/rails/mono_rail.png"),
-                new ResourceLocation("nyasamarailway", "textures/rails/mono_rail.png"),
-                new ResourceLocation("nyasamarailway", "textures/rails/mono_rail.png")
+                new ResourceLocation("nyasamaelectricity", "textures/blocks/catenary_wire.png"),
+                new ResourceLocation("nyasamaelectricity", "textures/blocks/catenary_wire.png"),
+                new ResourceLocation("nyasamaelectricity", "textures/blocks/catenary_wire.png")
         };
-    }
-
-    public WireRenderer(String[] texturePath) {
-        this.model = new WavefrontObject[]{
-                new WavefrontObject(new ResourceLocation("nyasamarailway", "models/rails/mono_rail_straight_magnet.obj")),
-                new WavefrontObject(new ResourceLocation("nyasamarailway", "models/rails/mono_rail_slope_magnet.obj")),
-                new WavefrontObject(new ResourceLocation("nyasamarailway", "models/rails/mono_rail_turned_magnet.obj"))
-        };
-        this.textures = new ResourceLocation[6];
-        for (int i = 0; i < 3; i++) {
-            textures[i] = new ResourceLocation("nyasamarailway", texturePath[i]);
-        }
-        for (int i = 3; i < 6; i++) {
-            textures[i] = new ResourceLocation("nyasamarailway", texturePath[i - 3].replace(".png", "_powered.png"));
-        }
     }
 
     public void renderTileEntityAt(TileEntity te, double x, double y, double z, float scale) {

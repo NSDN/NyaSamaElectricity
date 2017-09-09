@@ -20,7 +20,7 @@ import java.io.FileOutputStream;
 public class NyaSamaElectricity {
 
     public static final String MODID = "NyaSamaElectricity";
-    public static final String VERSION = "0.4";
+    public static final String VERSION = "0.5";
     public static Logger log = LogManager.getLogger(MODID);
 
     @SidedProxy(clientSide = "club.nsdn.nyasamaelectricity.Proxy.ClientProxy",

@@ -31,4 +31,4 @@ tile.CatenaryShelfHead.name=接触网杆(头部,无臂)
 tile.CatenaryShelfInsulator.name=接触网杆绝缘子
 tile.HVDangerSignA.name=高压危险警示牌1
 tile.HVDangerSignB.name=高压危险警示牌2
-tile.ParticleSystem.name=粒子系统
+tile.Wire.name=接触网线

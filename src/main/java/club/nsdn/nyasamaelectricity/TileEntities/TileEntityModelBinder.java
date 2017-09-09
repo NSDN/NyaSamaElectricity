@@ -129,8 +129,8 @@ public class TileEntityModelBinder {
                 new BaseRenderer(new HVDangerSignModel(), "textures/blocks/hv_danger_b.png"));
 
         ClientRegistry.bindTileEntitySpecialRenderer(
-                TileEntityParticleSystem.ParticlesSystem.class,
-                new BaseRenderer(new ParticleSystemModel(), "textures/blocks/particle.png"));
+                TileEntityWire.Wire.class,
+                new WireRenderer());
     }
 
 }

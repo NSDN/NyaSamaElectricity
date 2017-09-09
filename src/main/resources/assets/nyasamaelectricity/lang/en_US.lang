@@ -31,4 +31,4 @@ tile.CatenaryShelfHead.name=Catenary Shelf Head(Single)
 tile.CatenaryShelfInsulator.name=Catenary Shelf Insulator
 tile.HVDangerSignA.name=HV Danger(Type A)
 tile.HVDangerSignB.name=HV Danger(Type B)
-tile.ParticleSystem.name=Particle System
+tile.Wire.name=Catenary Wire
