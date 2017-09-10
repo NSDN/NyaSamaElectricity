@@ -15,6 +15,12 @@ import net.minecraft.world.World;
 public class TileEntityCatenaryShelfBodyH extends TileEntityBase {
 
     public static class CatenaryShelfBodyH extends TileEntity {
+
+        @Override
+        public double getMaxRenderDistanceSquared() {
+            return 16384.0D;
+        }
+
     }
 
     public TileEntityCatenaryShelfBodyH() {

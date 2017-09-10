@@ -23,6 +23,12 @@ public class TileEntityJunkCatenaryShelf extends TileEntityBase {
                     .getBoundingBox(xCoord, yCoord, zCoord, xCoord + 1, yCoord + 1, zCoord + 1)
                     .expand(2, 2, 2);
         }
+
+        @Override
+        public double getMaxRenderDistanceSquared() {
+            return 16384.0D;
+        }
+
     }
 
     public TileEntityJunkCatenaryShelf() {

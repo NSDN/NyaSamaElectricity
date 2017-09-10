@@ -4,18 +4,20 @@ package club.nsdn.nyasamaelectricity.TileEntities;
  * Created by drzzm32 on 2016.4.5.
  */
 
-import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraft.block.Block;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.MathHelper;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.block.material.Material;
-import net.minecraft.entity.EntityLivingBase;
 
 public class TileEntityCatenaryShelfBody extends TileEntityBase {
 
     public static class CatenaryShelfBody extends TileEntity {
+
+        @Override
+        public double getMaxRenderDistanceSquared() {
+            return 16384.0D;
+        }
+
     }
 
     public TileEntityCatenaryShelfBody() {

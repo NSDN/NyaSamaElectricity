@@ -14,7 +14,14 @@ import net.minecraft.entity.EntityLivingBase;
 
 public class TileEntityCatenaryShelfFoot extends TileEntityBase {
 
-    public static class CatenaryShelfFoot extends TileEntity { }
+    public static class CatenaryShelfFoot extends TileEntity {
+
+        @Override
+        public double getMaxRenderDistanceSquared() {
+            return 16384.0D;
+        }
+
+    }
 
     public TileEntityCatenaryShelfFoot() {
         super(Material.iron, "CatenaryShelfFoot");

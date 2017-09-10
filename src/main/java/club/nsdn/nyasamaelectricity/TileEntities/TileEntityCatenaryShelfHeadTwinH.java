@@ -26,6 +26,12 @@ public class TileEntityCatenaryShelfHeadTwinH extends TileEntityBase {
                     .getBoundingBox(xCoord, yCoord, zCoord, xCoord + 1, yCoord + 1, zCoord + 1)
                     .expand(4, 4, 4);
         }
+
+        @Override
+        public double getMaxRenderDistanceSquared() {
+            return 16384.0D;
+        }
+
     }
 
     public TileEntityCatenaryShelfHeadTwinH() {

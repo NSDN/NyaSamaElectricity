@@ -36,6 +36,11 @@ public class TileEntityWire extends BlockRailBase implements ITileEntityProvider
                     .expand(4, 4, 4);
         }
 
+        @Override
+        public double getMaxRenderDistanceSquared() {
+            return 16384.0D;
+        }
+
     }
 
     public TileEntityWire() {
