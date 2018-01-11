@@ -29,7 +29,7 @@ public class WireNodeRenderer extends TileEntitySpecialRenderer {
                 new WavefrontObject(new ResourceLocation("nyasamaelectricity", "models/blocks/wire_slope.obj")),
                 new WavefrontObject(new ResourceLocation("nyasamaelectricity", "models/blocks/wire_turned.obj"))
         };
-        this.texture = new ResourceLocation("nyasamaelectricity", "textures/blocks/catenary_wire.png");
+        this.texture = new ResourceLocation("nyasamaelectricity", "textures/blocks/catenary_node.png");
     }
 
     public void renderTileEntityAt(TileEntity te, double x, double y, double z, float scale) {
