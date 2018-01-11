@@ -32,3 +32,5 @@ tile.CatenaryShelfInsulator.name=Catenary Shelf Insulator
 tile.HVDangerSignA.name=HV Danger(Type A)
 tile.HVDangerSignB.name=HV Danger(Type B)
 tile.Wire.name=Catenary Wire
+tile.WireNode.name=Catenary Wire Node
+tile.WireSwitch.name=Catenary Wire Switch

@@ -32,3 +32,5 @@ tile.CatenaryShelfInsulator.name=接触网杆绝缘子
 tile.HVDangerSignA.name=高压危险警示牌1
 tile.HVDangerSignB.name=高压危险警示牌2
 tile.Wire.name=接触网线
+tile.WireNode.name=接触网节点
+tile.WireSwitch.name=接触网分岔
