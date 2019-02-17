@@ -1,7 +1,6 @@
 package club.nsdn.nyasamaelectricity.block;
 
 import club.nsdn.nyasamaelectricity.NyaSamaElectricity;
-import club.nsdn.nyasamaelectricity.api.LightBeam;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -30,8 +29,6 @@ public class BlockLoader {
     public static LinkedList<Block> blocks;
     public static LinkedHashMap<Block, Item> itemBlocks;
     public static Block logo;
-    public static LightBeam light;
-    public static LightBeam lineLight;
 
     @SubscribeEvent
     public void registerBlocks(RegistryEvent.Register<Block> event) {
