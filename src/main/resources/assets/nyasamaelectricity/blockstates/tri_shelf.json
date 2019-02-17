@@ -1,0 +1,18 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "nyasamaelectricity:tri_shelf"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}],
+    "facing=north,vertical=true": { "model": "nyasamaelectricity:tri_shelf" },
+    "facing=east,vertical=true": { "model": "nyasamaelectricity:tri_shelf", "y": 90 },
+    "facing=south,vertical=true": { "model": "nyasamaelectricity:tri_shelf", "y": 180 },
+    "facing=west,vertical=true": { "model": "nyasamaelectricity:tri_shelf", "y": 270 },
+    "facing=north,vertical=false": { "model": "nyasamaelectricity:tri_shelf", "x": 90 },
+    "facing=east,vertical=false": { "model": "nyasamaelectricity:tri_shelf", "x": 90, "y": 90 },
+    "facing=south,vertical=false": { "model": "nyasamaelectricity:tri_shelf", "x": 90, "y": 180 },
+    "facing=west,vertical=false": { "model": "nyasamaelectricity:tri_shelf", "x": 90, "y": 270 }
+  }
+}

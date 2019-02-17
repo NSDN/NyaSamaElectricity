@@ -12,8 +12,8 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 
 
 version = "2.0"
-group = "club.nsdn.nyasamaoptics" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "NyaSamaOptics"
+group = "club.nsdn.nyasamaelectricity" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "NyaSamaElectricity"
 
 sourceCompatibility = targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 compileJava {

@@ -1,0 +1,11 @@
+{
+  "forge_marker": 1,
+  "variants": {
+    "normal": {
+      "model": "nyasamaelectricity:cube_block",
+      "textures": {
+        "texture": "nyasamaelectricity:block/nsdn_logo"
+      }
+    }
+  }
+}

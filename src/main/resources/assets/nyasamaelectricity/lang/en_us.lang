@@ -1,0 +1,26 @@
+tile.NSDNLogo.name=NSDN Logo
+itemGroup.tabNyaSamaElectricity=NyaSama Electricity
+tile.NSESign.name=NyaSama Electricity
+tile.NSELogo.name=NyaSama Electricity Logo
+
+tile.CatenaryLong.name=Long Catenary Shelf
+tile.CatenaryShort.name=Short Catenary Shelf
+tile.CatenaryInsulator.name=Catenary Insulator
+tile.CatenaryH.name=H-Shape Catenary Pillar
+tile.CatenaryOldBase.name=Old Catenary Pillar(Base)
+tile.CatenaryOldBody.name=Old Catenary Pillar(Body)
+tile.CatenaryOldHead.name=Old Catenary Pillar(Head)
+
+tile.HVDangerA.name=HV Danger A
+tile.HVDangerB.name=HV Danger B
+
+tile.InsulatorBig.name=Big Insulator
+tile.InsulatorMid.name=Medium Insulator
+tile.InsulatorSmall.name=Small Insulator
+
+tile.QuadHead.name=Quad Pillar Head
+tile.QuadShelf.name=Quad Pillar
+tile.QuadSmall.name=Small Quad Pillar
+tile.QuadTriConv.name=Quad-Tri Converter
+tile.TriHead.name=Tri Pillar Head
+tile.TriShelf.name=Tri Pillar

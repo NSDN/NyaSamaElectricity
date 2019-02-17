@@ -1,8 +1,8 @@
 [
 {
-  "modid": "nyasamaoptics",
-  "name": "NyaSama Optics",
-  "description": "NyaSama optics mod.",
+  "modid": "nyasamaelectricity",
+  "name": "NyaSama Electricity",
+  "description": "NyaSama electricity mod.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "http://dev.nyasama.com/nsmc",
