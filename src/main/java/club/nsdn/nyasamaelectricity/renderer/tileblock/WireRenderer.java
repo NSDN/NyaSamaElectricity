@@ -4,13 +4,12 @@ import club.nsdn.nyasamatelecom.api.render.AbsTileEntitySpecialRenderer;
 import club.nsdn.nyasamatelecom.api.tileentity.TileEntityBase;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderHelper;
-import net.minecraft.client.renderer.Tessellator;
 import org.lwjgl.opengl.GL11;
 
 import javax.annotation.Nonnull;
 
 /**
- * Created by drzzm32 on 2019.1.30.
+ * Created by drzzm32 on 2019.2.17.
  */
 public class WireRenderer extends AbsTileEntitySpecialRenderer {
 

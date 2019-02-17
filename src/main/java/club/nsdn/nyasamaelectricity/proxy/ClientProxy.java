@@ -6,7 +6,7 @@ import net.minecraftforge.client.model.obj.OBJLoader;
 import net.minecraftforge.fml.common.event.*;
 
 /**
- * Created by drzzm32 on 2019.1.30.
+ * Created by drzzm32 on 2019.2.17.
  */
 public class ClientProxy extends CommonProxy {
 
