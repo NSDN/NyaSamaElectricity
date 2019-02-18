@@ -24,3 +24,8 @@ tile.QuadSmall.name=细四角支架
 tile.QuadTriConv.name=四-三转换器
 tile.TriHead.name=三角支架头
 tile.TriShelf.name=三角支架
+
+tile.WireEndpoint.name=电缆端点
+tile.WireNode.name=电缆节点
+tile.CatenaryEndpoint.name=接触网端点
+tile.CatenaryNode.name=接触网节点

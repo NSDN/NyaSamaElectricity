@@ -1,6 +1,8 @@
 package club.nsdn.nyasamaelectricity.block;
 
 import club.nsdn.nyasamaelectricity.NyaSamaElectricity;
+import club.nsdn.nyasamaelectricity.tileblock.WireEndpoint;
+import club.nsdn.nyasamaelectricity.tileblock.WireNode;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -29,6 +31,8 @@ public class BlockLoader {
     public static LinkedList<Block> blocks;
     public static LinkedHashMap<Block, Item> itemBlocks;
     public static Block logo;
+
+    public static WireNode wireNode, catenaryNode;
 
     @SubscribeEvent
     public void registerBlocks(RegistryEvent.Register<Block> event) {
@@ -71,8 +75,8 @@ public class BlockLoader {
         logo = new BlockLogo();
         blocks.add(logo);
 
-        blocks.add(new BlockCatenary("CatenaryLong", "catenary_long", 0.25, 1, 1));
-        blocks.add(new BlockCatenary("CatenaryShort", "catenary_short", 0.25, 1, 1));
+        blocks.add(new BlockCatenary("CatenaryLong", "catenary_long", 0.25, 1.5, 1));
+        blocks.add(new BlockCatenary("CatenaryShort", "catenary_short", 0.25, 1.5, 1));
         blocks.add(new BlockCatenary("CatenaryInsulator", "catenary_insulator", 0.5, 1, 1));
         blocks.add(new BlockCatenary("CatenaryH", "catenary_h", 0.25, 1, 0.375));
         blocks.add(new BlockCatenary("CatenaryOldBase", "catenary_old_base", 0.25, 1, 0.5));
@@ -92,6 +96,11 @@ public class BlockLoader {
         blocks.add(new BlockTriShelf("QuadTriConv", "quad_tri_conv"));
         blocks.add(new BlockTriShelf("TriHead", "tri_head"));
         blocks.add(new BlockTriShelf("TriShelf", "tri_shelf"));
+
+        blocks.add(new WireEndpoint("WireEndpoint", "wire_endpoint", 0.25, 0.25, 0.25));
+        blocks.add(wireNode = new WireNode("WireNode", "wire_node", 0.25, 0.25, 0.25));
+        blocks.add(new WireEndpoint("CatenaryEndpoint", "catenary_endpoint", 0.25, 1, 0.25));
+        blocks.add(catenaryNode = new WireNode("CatenaryNode", "catenary_node", 0.25, 1, 0.25));
     }
 
 }

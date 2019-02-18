@@ -24,3 +24,8 @@ tile.QuadSmall.name=Small Quad Pillar
 tile.QuadTriConv.name=Quad-Tri Converter
 tile.TriHead.name=Tri Pillar Head
 tile.TriShelf.name=Tri Pillar
+
+tile.WireEndpoint.name=Wire Endpoint
+tile.WireNode.name=Wire Node
+tile.CatenaryEndpoint.name=Catenary Endpoint
+tile.CatenaryNode.name=Catenary Node

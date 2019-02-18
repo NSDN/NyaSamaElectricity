@@ -1,0 +1,15 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "nyasamaelectricity:catenary_endpoint"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}],
+    "shape": {
+      "main": {  },
+      "wire": { "model": "nyasamaelectricity:catenary_main" },
+      "drop": { "model": "nyasamaelectricity:catenary_drop" }
+    }
+  }
+}

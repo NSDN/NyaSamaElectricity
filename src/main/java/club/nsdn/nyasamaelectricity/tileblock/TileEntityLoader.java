@@ -38,7 +38,8 @@ public class TileEntityLoader {
     public TileEntityLoader() {
         tileEntities = new LinkedList<>();
 
-
+        tileEntities.add(WireEndpoint.TileEntityWireEndpoint.class);
+        tileEntities.add(WireNode.TileEntityWireNode.class);
     }
 
 }

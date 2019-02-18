@@ -1,8 +1,10 @@
 package club.nsdn.nyasamaelectricity.tileblock;
 
 import club.nsdn.nyasamaelectricity.NyaSamaElectricity;
+import club.nsdn.nyasamaelectricity.renderer.tileblock.WireRenderer;
 import club.nsdn.nyasamatelecom.api.render.AbsTileEntitySpecialRenderer;
 import club.nsdn.nyasamatelecom.api.tileentity.TileEntityBase;
+import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -22,9 +24,9 @@ public class TileEntityModelBinder {
         return instance;
     }
 
-    public static LinkedHashMap<Class<? extends TileEntityBase>, AbsTileEntitySpecialRenderer> renderers;
+    public static LinkedHashMap<Class<? extends TileEntityBase>, TileEntitySpecialRenderer<? super TileEntityBase>> renderers;
 
-    private static void bind(AbsTileEntitySpecialRenderer renderer, Class<? extends TileEntityBase> tileEntity) {
+    private static void bind(TileEntitySpecialRenderer<? super TileEntityBase> renderer, Class<? extends TileEntityBase> tileEntity) {
         ClientRegistry.bindTileEntitySpecialRenderer(tileEntity, renderer);
     }
 
@@ -40,7 +42,7 @@ public class TileEntityModelBinder {
     public TileEntityModelBinder() {
         renderers = new LinkedHashMap<>();
 
-
+        renderers.put(WireNode.TileEntityWireNode.class, new WireRenderer());
     }
 
 }
