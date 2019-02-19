@@ -2,11 +2,13 @@ package club.nsdn.nyasamaelectricity.tileblock;
 
 import club.nsdn.nyasamaelectricity.NyaSamaElectricity;
 import club.nsdn.nyasamaelectricity.creativetab.CreativeTabLoader;
+import club.nsdn.nyasamaelectricity.util.catenary.BakedQuadHelper;
 import club.nsdn.nyasamatelecom.api.device.SignalBox;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.renderer.block.model.BakedQuad;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumBlockRenderType;
@@ -19,6 +21,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 import javax.annotation.Nonnull;
+import java.util.LinkedList;
 
 /**
  * Created by drzzm32 on 2019.2.18.
@@ -27,19 +30,36 @@ public class WireNode extends SignalBox {
 
     public static class TileEntityWireNode extends SignalBox.TileEntitySignalBox {
 
+        @SideOnly(Side.CLIENT)
+        public LinkedList<BakedQuad> srcQuads = new LinkedList<>();
+        @SideOnly(Side.CLIENT)
+        public LinkedList<BakedQuad> dstQuads = new LinkedList<>();
+
         public TileEntityWireNode() {
 
         }
 
         @Override
         public boolean hasFastRenderer() {
+            return false;
+        }
+
+        @Override
+        public boolean shouldRenderInPass(int pass) {
             return true;
         }
 
-        @Nonnull
         @Override
-        public AxisAlignedBB getRenderBoundingBox() {
-            return TileEntity.INFINITE_EXTENT_AABB;
+        @SideOnly(Side.CLIENT)
+        @Nonnull
+        public AxisAlignedBB getRenderBoundingBox()
+        {
+            return INFINITE_EXTENT_AABB;
+        }
+
+        @Override
+        public double getMaxRenderDistanceSquared() {
+            return 65536.0;
         }
 
     }

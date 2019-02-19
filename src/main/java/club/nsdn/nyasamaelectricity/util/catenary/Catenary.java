@@ -1,6 +1,6 @@
-package club.nsdn.nyasamaelectricity.util;
+package club.nsdn.nyasamaelectricity.util.catenary;
 
-import club.nsdn.nyasamaelectricity.NyaSamaElectricity;
+import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
 
@@ -8,6 +8,14 @@ import net.minecraft.util.math.Vec3d;
  * Created by drzzm32 on 2019.2.18.
  */
 public class Catenary {
+
+    public static float cosAngle (float angle) {
+        return MathHelper.cos(angle * 0.01745329252F);
+    }
+
+    public static float sinAngle (float angle) {
+        return MathHelper.sin(angle * 0.01745329252F);
+    }
 
     public static float asinh(float x) {
         return (float) Math.log(x + MathHelper.sqrt(x * x + 1));
@@ -19,6 +27,18 @@ public class Catenary {
 
     public static float atanh(float x) {
         return (float) (0.5 * Math.log((1 + x) / (1 - x)));
+    }
+
+    public static double distanceOf(double xStart, double yStart, double zStart, double xEnd, double yEnd, double zEnd) {
+        return Math.sqrt((xStart - xEnd) * (xStart - xEnd) +
+                (yStart - yEnd) * (yStart - yEnd) +
+                (zStart - zEnd) * (zStart - zEnd));
+    }
+
+    public static float distanceOf(float xStart, float yStart, float zStart, float xEnd, float yEnd, float zEnd) {
+        return MathHelper.sqrt((xStart - xEnd) * (xStart - xEnd) +
+                (yStart - yEnd) * (yStart - yEnd) +
+                (zStart - zEnd) * (zStart - zEnd));
     }
 
     public static class Cls {
@@ -91,20 +111,43 @@ public class Catenary {
 
     }
 
-    public static Vec3d calc(Vec3d vec, double progress) {
-        if (progress > 1) progress = 1;
-        if (progress < 0) progress = 0;
-
-        double len = vec.lengthVector();
+    public static  RawQuadGroup renderCatenaryCable(Vec3d from, Vec3d to, TextureAtlasSprite texture) {
+        Vec3d vec = to.subtract(from);
         double hlen = Math.sqrt(vec.x * vec.x + vec.z * vec.z);
-        Cls c = new Cls(0, vec.y, len, 1);
+        double drop = (Math.PI - 3) * hlen;
+        Vec3d offset = new Vec3d(0, 0.01, 0);
+        if (Math.abs(from.y - to.y) < 0.01)
+            vec = to.add(offset);
+        else vec = to;
+        return renderCatenaryCable(from, vec, false, (float) drop, 0.0625F, texture);
+    }
 
-        Vec3d nor = vec.normalize();
-        return new Vec3d(
-                nor.x * len * progress,
-                c.apply((float) (hlen * progress)),
-                nor.z * len * progress
-        );
+    public static RawQuadGroup renderCatenaryCable(Vec3d from, Vec3d to, boolean half, float drop, float thickness, TextureAtlasSprite texture) {
+        RawQuadGroup ret = new RawQuadGroup();
+
+        Vec3d vec = to.subtract(from);
+        double len = vec.lengthVector();
+        float steps = len < 64 ? 128 : MathHelper.floor(len * 2);
+        float y0 = 0, y1;
+
+        float d = MathHelper.sqrt((from.x-to.x)*(from.x-to.x) + (from.z-to.z)*(from.z-to.z));
+        float step = d/steps;
+        Cls c = new Cls(0.0, to.y-from.y, d, drop);
+
+        //Origin
+        for (int i = 0; i < steps / (half ? 2 : 1); i++) {
+            y1 = c.apply((i + 1) * step);
+
+            ret.add((new RawQuadCube(thickness, MathHelper.sqrt(step*step + (y1 - y0)*(y1 - y0)), thickness, texture))
+                    .rotateAroundZ(-(float) Math.atan2(y0 - y1, step) * 180F / (float) Math.PI)
+                    .translateCoord(-y0, i * step, 0)
+            );
+            y0 = y1;
+        }
+
+        ret.rotateToVec((float) from.x, 0, (float) from.z, (float) to.x, 0, (float) to.z);
+        ret.translateCoord((float) from.x, (float) from.y, (float) from.z);
+        return ret;
     }
 
 }
