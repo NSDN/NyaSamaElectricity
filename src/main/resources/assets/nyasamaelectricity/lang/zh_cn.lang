@@ -3,6 +3,8 @@ itemGroup.tabNyaSamaElectricity=喵玉电力
 tile.NSESign.name=喵玉电力
 tile.NSELogo.name=喵玉电力标志
 
+tile.BigPillar.name=金属柱
+
 tile.CatenaryLong.name=长接触网臂
 tile.CatenaryShort.name=短接触网臂
 tile.CatenaryInsulator.name=接触网架绝缘子

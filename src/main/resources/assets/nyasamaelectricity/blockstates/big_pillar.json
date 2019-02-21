@@ -1,0 +1,43 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "nyasamaelectricity:big_pillar_core.obj"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{
+      "submodel": {
+        "up": { "model": "nyasamaelectricity:big_pillar_side.obj", "x": 180 },
+        "down": { "model": "nyasamaelectricity:big_pillar_side.obj" },
+        "north": { "model": "nyasamaelectricity:big_pillar_side.obj", "x": 90, "y": 180 },
+        "south": { "model": "nyasamaelectricity:big_pillar_side.obj", "x": 90 },
+        "west": { "model": "nyasamaelectricity:big_pillar_side.obj", "x": 90, "y": 90 },
+        "east": { "model": "nyasamaelectricity:big_pillar_side.obj", "x": 90, "y": 270 }
+      }
+    }],
+    "up": {
+      "true": { "submodel": { "up": { "model": "nyasamaelectricity:big_pillar_side.obj", "x": 180 } } },
+      "false": {  }
+    },
+    "down": {
+      "true": { "submodel": { "down": { "model": "nyasamaelectricity:big_pillar_side.obj" } } },
+      "false": {  }
+    },
+    "north": {
+      "true": { "submodel": { "north": { "model": "nyasamaelectricity:big_pillar_side.obj", "x": 90, "y": 180 } } },
+      "false": {  }
+    },
+    "south": {
+      "true": { "submodel": { "south": { "model": "nyasamaelectricity:big_pillar_side.obj", "x": 90 } } },
+      "false": {  }
+    },
+    "west": {
+      "true": { "submodel": { "west": { "model": "nyasamaelectricity:big_pillar_side.obj", "x": 90, "y": 90 } } },
+      "false": {  }
+    },
+    "east": {
+      "true": { "submodel": { "east": { "model": "nyasamaelectricity:big_pillar_side.obj", "x": 90, "y": 270 } } },
+      "false": {  }
+    }
+  }
+}

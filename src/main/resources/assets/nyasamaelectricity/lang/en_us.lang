@@ -3,6 +3,8 @@ itemGroup.tabNyaSamaElectricity=NyaSama Electricity
 tile.NSESign.name=NyaSama Electricity
 tile.NSELogo.name=NyaSama Electricity Logo
 
+tile.BigPillar.name=Big Pillar
+
 tile.CatenaryLong.name=Long Catenary Shelf
 tile.CatenaryShort.name=Short Catenary Shelf
 tile.CatenaryInsulator.name=Catenary Insulator

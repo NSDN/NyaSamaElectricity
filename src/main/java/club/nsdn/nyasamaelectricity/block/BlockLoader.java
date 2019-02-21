@@ -75,6 +75,8 @@ public class BlockLoader {
         logo = new BlockLogo();
         blocks.add(logo);
 
+        blocks.add(new BlockBigPillar());
+
         blocks.add(new BlockCatenary("CatenaryLong", "catenary_long", 0.25, 1.5, 1));
         blocks.add(new BlockCatenary("CatenaryShort", "catenary_short", 0.25, 1.5, 1));
         blocks.add(new BlockCatenary("CatenaryInsulator", "catenary_insulator", 0.5, 1, 1));
