@@ -1,5 +1,6 @@
 package club.nsdn.nyasamaelectricity.util.catenary;
 
+import club.nsdn.nyasamaelectricity.util.MathAssist;
 import net.minecraft.util.math.MathHelper;
 
 public abstract class RawQuadBase<T extends RawQuadBase> implements IRawElement<RawQuadBase>{
@@ -55,8 +56,8 @@ public abstract class RawQuadBase<T extends RawQuadBase> implements IRawElement<
      */
     @Override
     public RawQuadBase rotateAroundX(float angle) {
-        float cos = Catenary.cosAngle(angle);
-        float sin = Catenary.sinAngle(angle);
+        float cos = MathAssist.cosAngle(angle);
+        float sin = MathAssist.sinAngle(angle);
 
         for (int i = 0; i < this.vertexes.length; i++) {						//	X	Y	Z
             float x = this.vertexes[i][0];										//	1	0	0
@@ -81,8 +82,8 @@ public abstract class RawQuadBase<T extends RawQuadBase> implements IRawElement<
      */
     @Override
     public RawQuadBase rotateAroundY(float angle) {
-        float cos = Catenary.cosAngle(angle);
-        float sin = Catenary.sinAngle(angle);
+        float cos = MathAssist.cosAngle(angle);
+        float sin = MathAssist.sinAngle(angle);
 
         for (int i = 0; i < this.vertexes.length; i++) {						//	X		Y	Z
             float x = 	this.vertexes[i][0] * cos + this.vertexes[i][2] * sin;	//	cos		0	sin
@@ -107,8 +108,8 @@ public abstract class RawQuadBase<T extends RawQuadBase> implements IRawElement<
      */
     @Override
     public RawQuadBase rotateAroundZ(float angle) {
-        float cos = Catenary.cosAngle(angle);
-        float sin = Catenary.sinAngle(angle);
+        float cos = MathAssist.cosAngle(angle);
+        float sin = MathAssist.sinAngle(angle);
 
         for (int i = 0; i < this.vertexes.length; i++) {						//	X		Y	Z
             float x = this.vertexes[i][0] * cos - this.vertexes[i][1] * sin;	//	cos	-sin	0

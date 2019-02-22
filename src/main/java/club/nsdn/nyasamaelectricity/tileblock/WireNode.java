@@ -41,7 +41,7 @@ public class WireNode extends SignalBox {
 
         @Override
         public boolean hasFastRenderer() {
-            return false;
+            return true;
         }
 
         @Override
@@ -166,6 +166,11 @@ public class WireNode extends SignalBox {
     @Override
     public boolean isFullCube(IBlockState state) {
         return false;
+    }
+
+    @Override
+    public boolean shouldSideBeRendered(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing facing) {
+        return true;
     }
 
 }

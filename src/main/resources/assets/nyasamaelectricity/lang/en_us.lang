@@ -8,6 +8,7 @@ tile.BigPillar.name=Big Pillar
 tile.CatenaryLong.name=Long Catenary Shelf
 tile.CatenaryShort.name=Short Catenary Shelf
 tile.CatenaryInsulator.name=Catenary Insulator
+tile.CatenaryInsulatorRev.name=Catenary Insulator Rev
 tile.CatenaryH.name=H-Shape Catenary Pillar
 tile.CatenaryOldBase.name=Old Catenary Pillar(Base)
 tile.CatenaryOldBody.name=Old Catenary Pillar(Body)

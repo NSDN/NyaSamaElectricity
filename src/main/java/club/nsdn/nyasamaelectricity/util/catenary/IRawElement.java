@@ -5,7 +5,7 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-import static club.nsdn.nyasamaelectricity.util.catenary.Catenary.distanceOf;
+import static club.nsdn.nyasamaelectricity.util.MathAssist.distanceOf;
 
 @SideOnly(Side.CLIENT)
 public interface IRawElement<T extends IRawElement> extends IRawModel<IRawElement> {

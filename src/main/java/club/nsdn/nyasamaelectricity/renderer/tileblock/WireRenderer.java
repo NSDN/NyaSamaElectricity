@@ -1,21 +1,20 @@
 package club.nsdn.nyasamaelectricity.renderer.tileblock;
 
+import club.nsdn.nyasamaelectricity.block.BlockLoader;
 import club.nsdn.nyasamaelectricity.tileblock.WireNode;
+import club.nsdn.nyasamaelectricity.util.Wire;
+import club.nsdn.nyasamaelectricity.util.catenary.RawQuadGroup;
 import club.nsdn.nyasamatelecom.api.render.AbsFastTESR;
 import club.nsdn.nyasamatelecom.api.tileentity.TileEntityBase;
-import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.BlockModelRenderer;
-import net.minecraft.client.renderer.BlockRendererDispatcher;
 import net.minecraft.client.renderer.BufferBuilder;
-import net.minecraft.client.renderer.block.model.IBakedModel;
+import net.minecraft.client.renderer.block.model.BakedQuad;
+import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
-import net.minecraft.world.IBlockAccess;
-import net.minecraftforge.client.MinecraftForgeClient;
 
 import javax.annotation.Nonnull;
+import java.util.LinkedList;
 
 /**
  * Created by drzzm32 on 2019.2.17.
@@ -23,26 +22,32 @@ import javax.annotation.Nonnull;
 public class WireRenderer extends AbsFastTESR {
 
     public WireRenderer() {
-
     }
 
-    public double getStep(Vec3d vec) {
-        return 1.0 / MathHelper.floor(vec.lengthVector() / 0.0625);
+    public void render(BufferBuilder buffer, double x, double y, double z, LinkedList<BakedQuad> quads) {
+        buffer.setTranslation(x, y, z);
+
+        int i = 15728640;
+        for (BakedQuad quad: quads) {
+            buffer.addVertexData(quad.getVertexData());
+            buffer.putBrightness4(i, i, i, i);
+
+            float diffuse = 1;
+            if (quad.shouldApplyDiffuseLighting())
+                diffuse = net.minecraftforge.client.model.pipeline.LightUtil.diffuseLight(quad.getFace());
+
+            buffer.putColorMultiplier(diffuse, diffuse, diffuse, 4);
+            buffer.putColorMultiplier(diffuse, diffuse, diffuse, 3);
+            buffer.putColorMultiplier(diffuse, diffuse, diffuse, 2);
+            buffer.putColorMultiplier(diffuse, diffuse, diffuse, 1);
+
+            buffer.putPosition(0, 0, 0);
+        }
     }
 
-    public void calcWire(
-            Vec3d vec, double progress,
-            double x, double y, double z,
-            BlockPos pos, BufferBuilder buffer
-    ) {
-        if (progress > 1) progress = 1;
-        if (progress < 0) progress = 0;
-
-        buffer.setTranslation(
-                x - (double) pos.getX() + vec.x * progress,
-                y - (double) pos.getY() + vec.y * progress,
-                z - (double) pos.getZ() + vec.z * progress
-        );
+    @Override
+    public boolean isGlobalRenderer(TileEntityBase te) {
+        return true;
     }
 
     @Override
@@ -52,52 +57,48 @@ public class WireRenderer extends AbsFastTESR {
             float partialTicks, int destroyStage, float partial,
             @Nonnull BufferBuilder buffer
     ) {
+        boolean isCatenary = te.getBlockType() == BlockLoader.catenaryNode;
+
         if (te instanceof WireNode.TileEntityWireNode) {
             WireNode.TileEntityWireNode wireNode = (WireNode.TileEntityWireNode) te;
 
+            Vec3d offset = new Vec3d(0.5, 0.5, 0.5);
+            if (isCatenary)
+                offset = offset.addVector(0, 0.5 - 0.03125, 0);
+
+            Vec3d theVec = new Vec3d(wireNode.getPos()).add(offset);
             Vec3d srcVec = null, dstVec = null;
             if (wireNode.getSender() != null) {
                 BlockPos senderPos = wireNode.getSender().getPos();
-                srcVec = new Vec3d(senderPos.subtract(wireNode.getPos()));
-            }
+                srcVec = new Vec3d(senderPos).add(offset);
+            } else if (!wireNode.srcQuads.isEmpty()) wireNode.srcQuads.clear();
             if (wireNode.getTarget() != null) {
                 BlockPos targetPos = wireNode.getTarget().getPos();
-                dstVec = new Vec3d(targetPos.subtract(wireNode.getPos()));
-            }
+                dstVec = new Vec3d(targetPos).add(offset);
+            } else if (!wireNode.dstQuads.isEmpty()) wireNode.dstQuads.clear();
 
-            BlockRendererDispatcher dispatcher = Minecraft.getMinecraft().getBlockRendererDispatcher();
-            BlockModelRenderer renderer = dispatcher.getBlockModelRenderer();
+            TextureAtlasSprite texture = Minecraft.getMinecraft().getTextureMapBlocks().getAtlasSprite(
+                    "nyasamaelectricity:block/wire"
+            );
 
-            BlockPos pos = wireNode.getPos();
-            IBlockAccess world = MinecraftForgeClient.getRegionRenderCache(te.getWorld(), pos);
-            IBlockState state = world.getBlockState(pos);
-
-            IBlockState wire = state.withProperty(WireNode.SHAPE, WireNode.EnumShape.WIRE);
-            IBlockState drop = state.withProperty(WireNode.SHAPE, WireNode.EnumShape.DROP);
-            IBakedModel wireModel = dispatcher.getBlockModelShapes().getModelForState(wire);
-            IBakedModel dropModel = dispatcher.getBlockModelShapes().getModelForState(drop);
+            x = x - wireNode.getPos().getX();
+            y = y - wireNode.getPos().getY();
+            z = z - wireNode.getPos().getZ();
 
             if (srcVec != null) {
-                double step = getStep(srcVec);
-                for (double i = step; i < 1; i += step) {
-                    calcWire(srcVec, i, x, y, z, pos, buffer);
-                    if ((((int) (i / step)) % 16) == 0)
-                        renderer.renderModel(world, dropModel, drop, pos, buffer, false);
-                    else
-                        renderer.renderModel(world, wireModel, wire, pos, buffer, false);
-
+                if (wireNode.srcQuads.isEmpty()) {
+                    RawQuadGroup group = isCatenary ? Wire.renderCatenary(srcVec, theVec, texture) : Wire.renderCable(srcVec, theVec, texture);
+                    group.bake(wireNode.srcQuads);
                 }
+                render(buffer, x, y, z, wireNode.srcQuads);
             }
 
             if (dstVec != null) {
-                double step = getStep(dstVec);
-                for (double i = step; i < 1; i += step) {
-                    calcWire(dstVec, i, x, y, z, pos, buffer);
-                    if ((((int) (i / step)) % 16) == 0)
-                        renderer.renderModel(world, dropModel, drop, pos, buffer, false);
-                    else
-                        renderer.renderModel(world, wireModel, wire, pos, buffer, false);
+                if (wireNode.dstQuads.isEmpty()) {
+                    RawQuadGroup group = isCatenary ? Wire.renderCatenary(theVec, dstVec, texture) : Wire.renderCable(theVec, dstVec, texture);
+                    group.bake(wireNode.dstQuads);
                 }
+                render(buffer, x, y, z, wireNode.dstQuads);
             }
 
         }

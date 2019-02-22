@@ -80,6 +80,7 @@ public class BlockLoader {
         blocks.add(new BlockCatenary("CatenaryLong", "catenary_long", 0.25, 1.5, 1));
         blocks.add(new BlockCatenary("CatenaryShort", "catenary_short", 0.25, 1.5, 1));
         blocks.add(new BlockCatenary("CatenaryInsulator", "catenary_insulator", 0.5, 1, 1));
+        blocks.add(new BlockCatenary("CatenaryInsulatorRev", "catenary_insulator_rev", 0.5, 1, 1));
         blocks.add(new BlockCatenary("CatenaryH", "catenary_h", 0.25, 1, 0.375));
         blocks.add(new BlockCatenary("CatenaryOldBase", "catenary_old_base", 0.25, 1, 0.5));
         blocks.add(new BlockCatenary("CatenaryOldBody", "catenary_old_body", 0.25, 1, 0.5));

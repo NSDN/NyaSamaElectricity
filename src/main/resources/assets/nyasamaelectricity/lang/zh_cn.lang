@@ -8,6 +8,7 @@ tile.BigPillar.name=金属柱
 tile.CatenaryLong.name=长接触网臂
 tile.CatenaryShort.name=短接触网臂
 tile.CatenaryInsulator.name=接触网架绝缘子
+tile.CatenaryInsulatorRev.name=改进型接触网架绝缘子
 tile.CatenaryH.name=工字接触网杆
 tile.CatenaryOldBase.name=老式接触网杆(底部)
 tile.CatenaryOldBody.name=老式接触网杆(主体)

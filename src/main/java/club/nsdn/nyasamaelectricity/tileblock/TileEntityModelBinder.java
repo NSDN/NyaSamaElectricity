@@ -1,7 +1,7 @@
 package club.nsdn.nyasamaelectricity.tileblock;
 
 import club.nsdn.nyasamaelectricity.NyaSamaElectricity;
-import club.nsdn.nyasamaelectricity.renderer.tileblock.CatenaryRenderer;
+import club.nsdn.nyasamaelectricity.renderer.tileblock.WireRenderer;
 import club.nsdn.nyasamatelecom.api.tileentity.TileEntityBase;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -41,7 +41,7 @@ public class TileEntityModelBinder {
     public TileEntityModelBinder() {
         renderers = new LinkedHashMap<>();
 
-        renderers.put(WireNode.TileEntityWireNode.class, new CatenaryRenderer());
+        renderers.put(WireNode.TileEntityWireNode.class, new WireRenderer());
     }
 
 }
