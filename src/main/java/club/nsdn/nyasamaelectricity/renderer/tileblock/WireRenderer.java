@@ -66,6 +66,11 @@ public class WireRenderer extends AbsFastTESR {
             if (isCatenary)
                 offset = offset.addVector(0, 0.5 - 0.03125, 0);
 
+            if (wireNode.srcQuads == null)
+                wireNode.srcQuads = new LinkedList<>();
+            if (wireNode.dstQuads == null)
+                wireNode.dstQuads = new LinkedList<>();
+
             Vec3d theVec = new Vec3d(wireNode.getPos()).add(offset);
             Vec3d srcVec = null, dstVec = null;
             if (wireNode.getSender() != null) {

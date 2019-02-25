@@ -31,9 +31,9 @@ public class WireNode extends SignalBox {
     public static class TileEntityWireNode extends SignalBox.TileEntitySignalBox {
 
         @SideOnly(Side.CLIENT)
-        public LinkedList<BakedQuad> srcQuads = new LinkedList<>();
+        public LinkedList<BakedQuad> srcQuads;
         @SideOnly(Side.CLIENT)
-        public LinkedList<BakedQuad> dstQuads = new LinkedList<>();
+        public LinkedList<BakedQuad> dstQuads;
 
         public TileEntityWireNode() {
 
