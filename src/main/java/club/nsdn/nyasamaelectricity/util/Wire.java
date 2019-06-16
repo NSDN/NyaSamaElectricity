@@ -131,9 +131,7 @@ public class Wire {
         double hlen = Math.sqrt(vec.x * vec.x + vec.z * vec.z);
         int steps = MathHelper.floor(hlen);
         float step = (float) hlen / (float) steps;
-        double cos = vec.dotProduct(new Vec3d(vec.x, 0, vec.z)) / (len * hlen);
-        if (cos > 1) cos = 1; if (cos < -1) cos = -1; // prevent NaN
-        float angle = (float) Math.acos(cos);
+        float angle = (float) MathHelper.atan2(vec.y, hlen);
 
         ret.add((new RawQuadCube(size, (float) len, size, texture))
                 .rotateAroundZ(angle * 180F / (float) Math.PI)
