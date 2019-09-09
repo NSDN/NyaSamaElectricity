@@ -1,0 +1,34 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "nyasamaelectricity:cable_node_core.obj"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}],
+    "up": {
+      "true": { "submodel": { "up": { "model": "nyasamaelectricity:cable_node_side.obj", "x": 180 } } },
+      "false": {  }
+    },
+    "down": {
+      "true": { "submodel": { "down": { "model": "nyasamaelectricity:cable_node_side.obj" } } },
+      "false": {  }
+    },
+    "north": {
+      "true": { "submodel": { "north": { "model": "nyasamaelectricity:cable_node_side.obj", "x": 90, "y": 180 } } },
+      "false": {  }
+    },
+    "south": {
+      "true": { "submodel": { "south": { "model": "nyasamaelectricity:cable_node_side.obj", "x": 90 } } },
+      "false": {  }
+    },
+    "west": {
+      "true": { "submodel": { "west": { "model": "nyasamaelectricity:cable_node_side.obj", "x": 90, "y": 90 } } },
+      "false": {  }
+    },
+    "east": {
+      "true": { "submodel": { "east": { "model": "nyasamaelectricity:cable_node_side.obj", "x": 90, "y": 270 } } },
+      "false": {  }
+    }
+  }
+}

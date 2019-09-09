@@ -1,6 +1,7 @@
 package club.nsdn.nyasamaelectricity.tileblock;
 
 import club.nsdn.nyasamaelectricity.NyaSamaElectricity;
+import club.nsdn.nyasamaelectricity.renderer.tileblock.CableRenderer;
 import club.nsdn.nyasamaelectricity.renderer.tileblock.WireRenderer;
 import club.nsdn.nyasamatelecom.api.tileentity.TileEntityBase;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
@@ -42,6 +43,7 @@ public class TileEntityModelBinder {
         renderers = new LinkedHashMap<>();
 
         renderers.put(WireNode.TileEntityWireNode.class, new WireRenderer());
+        renderers.put(CableNode.TileEntityCableNode.class, new CableRenderer());
     }
 
 }

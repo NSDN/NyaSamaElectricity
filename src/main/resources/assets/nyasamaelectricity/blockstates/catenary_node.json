@@ -5,11 +5,6 @@
   },
   "variants": {
     "normal": [{}],
-    "inventory": [{}],
-    "shape": {
-      "main": {  },
-      "wire": { "model": "nyasamaelectricity:catenary_main" },
-      "drop": { "model": "nyasamaelectricity:catenary_drop" }
-    }
+    "inventory": [{}]
   }
 }

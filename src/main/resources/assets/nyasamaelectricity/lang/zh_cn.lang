@@ -32,3 +32,5 @@ tile.WireEndpoint.name=电缆端点
 tile.WireNode.name=电缆节点
 tile.CatenaryEndpoint.name=接触网端点
 tile.CatenaryNode.name=接触网节点
+tile.CableEndpoint.name=钢缆端点
+tile.CableNode.name=钢缆节点

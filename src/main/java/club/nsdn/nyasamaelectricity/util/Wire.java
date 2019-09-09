@@ -119,6 +119,24 @@ public class Wire {
             vec = to;
         return renderCatenaryCable(from, vec, false, (float) drop, 0.0625F, texture);
     }
+
+    public static RawQuadGroup renderHardCable(Vec3d from, Vec3d to, TextureAtlasSprite texture) {
+        RawQuadGroup ret = new RawQuadGroup();
+
+        float size = 0.125F;
+        Vec3d vec = to.subtract(from);
+        double len = vec.lengthVector();
+        double hlen = Math.sqrt(vec.x * vec.x + vec.z * vec.z);
+        float angle = (float) MathHelper.atan2(vec.y, hlen);
+
+        ret.add((new RawQuadCube(size, (float) len, size, texture))
+                .rotateAroundZ(angle * 180F / (float) Math.PI)
+        );
+
+        ret.rotateToVec((float) from.x, 0, (float) from.z, (float) to.x, 0, (float) to.z);
+        ret.translateCoord((float) from.x, (float) from.y, (float) from.z);
+        return ret;
+    }
     
     public static RawQuadGroup renderCatenary(Vec3d from, Vec3d to, TextureAtlasSprite texture) {
         RawQuadGroup ret = new RawQuadGroup();

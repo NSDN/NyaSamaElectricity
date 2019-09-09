@@ -32,3 +32,5 @@ tile.WireEndpoint.name=Wire Endpoint
 tile.WireNode.name=Wire Node
 tile.CatenaryEndpoint.name=Catenary Endpoint
 tile.CatenaryNode.name=Catenary Node
+tile.CableEndpoint.name=Steel Cable Endpoint
+tile.CableNode.name=Steel Cable Node

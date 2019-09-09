@@ -4,7 +4,6 @@ import club.nsdn.nyasamaelectricity.NyaSamaElectricity;
 import club.nsdn.nyasamaelectricity.creativetab.CreativeTabLoader;
 import club.nsdn.nyasamatelecom.api.device.SignalBoxSender;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
@@ -26,28 +25,6 @@ public class WireEndpoint extends SignalBoxSender {
 
     public static class TileEntityWireEndpoint extends SignalBoxSender.TileEntitySignalBoxSender { }
 
-    public static enum EnumShape implements IStringSerializable {
-        MAIN("main"),
-        WIRE("wire"),
-        DROP("drop");
-
-        private final String name;
-
-        EnumShape(String name) {
-            this.name = name;
-        }
-
-        public String toString() {
-            return this.name;
-        }
-
-        public String getName() {
-            return this.name;
-        }
-    }
-
-    public static final PropertyEnum<EnumShape> SHAPE = PropertyEnum.create("shape", EnumShape.class);
-
     public final AxisAlignedBB AABB;
 
     public WireEndpoint(String name, String id, double x, double y, double z) {
@@ -56,10 +33,6 @@ public class WireEndpoint extends SignalBoxSender {
         setResistance(blockHardness * 5.0F);
         setSoundType(SoundType.METAL);
         setCreativeTab(CreativeTabLoader.tabNyaSamaElectricity);
-
-        setDefaultState(blockState.getBaseState()
-                        .withProperty(SHAPE, EnumShape.MAIN)
-        );
 
         this.AABB = new AxisAlignedBB(
                 0.5 - x / 2, 0.5 - y / 2, 0.5 - z / 2,
@@ -90,29 +63,18 @@ public class WireEndpoint extends SignalBoxSender {
     @Override
     @Nonnull
     public IBlockState getStateFromMeta(int meta) {
-        switch (meta) {
-            default:
-            case 0: return getDefaultState().withProperty(SHAPE, EnumShape.MAIN);
-            case 1: return getDefaultState().withProperty(SHAPE, EnumShape.WIRE);
-            case 2: return getDefaultState().withProperty(SHAPE, EnumShape.DROP);
-        }
+        return getDefaultState();
     }
 
     @Override
     public int getMetaFromState(IBlockState state) {
-        EnumShape shape = state.getValue(SHAPE);
-        switch (shape) {
-            default:
-            case MAIN: return 0;
-            case WIRE: return 1;
-            case DROP: return 2;
-        }
+        return 0;
     }
 
     @Override
     @Nonnull
     protected BlockStateContainer createBlockState() {
-        return new BlockStateContainer(this, SHAPE);
+        return new BlockStateContainer(this);
     }
 
     @Override
