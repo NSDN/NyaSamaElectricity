@@ -128,6 +128,7 @@ public class Wire {
         double len = vec.lengthVector();
         double hlen = Math.sqrt(vec.x * vec.x + vec.z * vec.z);
         float angle = (float) MathHelper.atan2(vec.y, hlen);
+        if (hlen == 0) angle = (vec.y > 0) ? 0 : (float) Math.PI;
 
         ret.add((new RawQuadCube(size, (float) len, size, texture))
                 .rotateAroundZ(angle * 180F / (float) Math.PI)
@@ -150,6 +151,7 @@ public class Wire {
         int steps = MathHelper.floor(hlen);
         float step = (float) hlen / (float) steps;
         float angle = (float) MathHelper.atan2(vec.y, hlen);
+        if (hlen == 0) angle = (vec.y > 0) ? 0 : (float) Math.PI;
 
         ret.add((new RawQuadCube(size, (float) len, size, texture))
                 .rotateAroundZ(angle * 180F / (float) Math.PI)
