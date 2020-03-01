@@ -5,7 +5,7 @@
 		"gui": {
 			"rotation": [ 30, 135, 0 ],
 			"translation": [ 0, 0, 0],
-			"scale":[ 1.5, 1.5, 1.5 ]
+			"scale":[ 0.625, 0.625, 0.625 ]
 		},
 		"head": {
 			"rotation": [ 0, -90, 0 ],
