@@ -19,8 +19,8 @@
 		}
 	},
 	"textures": {
-		"1": "nyasamaelectricity:block/wire_node",
-		"particle": "nyasamaelectricity:block/wire_node"
+		"1": "nyasamaelectricity:block/wire",
+		"particle": "nyasamaelectricity:block/wire"
 	},
 	"elements": [
 		{
