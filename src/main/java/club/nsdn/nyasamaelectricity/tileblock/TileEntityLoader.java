@@ -42,6 +42,8 @@ public class TileEntityLoader {
         tileEntities.add(WireNode.TileEntityWireNode.class);
         tileEntities.add(CableEndpoint.TileEntityCableEndpoint.class);
         tileEntities.add(CableNode.TileEntityCableNode.class);
+        tileEntities.add(PillarEndpoint.TileEntityPillarEndpoint.class);
+        tileEntities.add(PillarNode.TileEntityPillarNode.class);
     }
 
 }

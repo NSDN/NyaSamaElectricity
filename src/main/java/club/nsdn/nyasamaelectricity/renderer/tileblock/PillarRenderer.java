@@ -1,6 +1,6 @@
 package club.nsdn.nyasamaelectricity.renderer.tileblock;
 
-import club.nsdn.nyasamaelectricity.tileblock.CableNode;
+import club.nsdn.nyasamaelectricity.tileblock.PillarNode;
 import club.nsdn.nyasamaelectricity.util.Wire;
 import club.nsdn.nyasamaelectricity.util.catenary.RawQuadGroup;
 import club.nsdn.nyasamatelecom.api.render.AbsFastTESR;
@@ -16,11 +16,11 @@ import javax.annotation.Nonnull;
 import java.util.LinkedList;
 
 /**
- * Created by drzzm32 on 2019.9.9.
+ * Created by drzzm32 on 2020.3.1
  */
-public class CableRenderer extends AbsFastTESR {
+public class PillarRenderer extends AbsFastTESR {
 
-    public CableRenderer() {
+    public PillarRenderer() {
     }
 
     public void render(BufferBuilder buffer, double x, double y, double z, LinkedList<BakedQuad> quads) {
@@ -56,49 +56,49 @@ public class CableRenderer extends AbsFastTESR {
             float partialTicks, int destroyStage, float partial,
             @Nonnull BufferBuilder buffer
     ) {
-        if (te instanceof CableNode.TileEntityCableNode) {
-            CableNode.TileEntityCableNode cableNode = (CableNode.TileEntityCableNode) te;
+        if (te instanceof PillarNode.TileEntityPillarNode) {
+            PillarNode.TileEntityPillarNode pillarNode = (PillarNode.TileEntityPillarNode) te;
 
             Vec3d offset = new Vec3d(0.5, 0.5, 0.5);
 
-            if (cableNode.srcQuads == null)
-                cableNode.srcQuads = new LinkedList<>();
-            if (cableNode.dstQuads == null)
-                cableNode.dstQuads = new LinkedList<>();
+            if (pillarNode.srcQuads == null)
+                pillarNode.srcQuads = new LinkedList<>();
+            if (pillarNode.dstQuads == null)
+                pillarNode.dstQuads = new LinkedList<>();
 
-            Vec3d theVec = new Vec3d(cableNode.getPos()).add(offset);
+            Vec3d theVec = new Vec3d(pillarNode.getPos()).add(offset);
             Vec3d srcVec = null, dstVec = null;
-            if (cableNode.getSender() != null) {
-                BlockPos senderPos = cableNode.getSender().getPos();
+            if (pillarNode.getSender() != null) {
+                BlockPos senderPos = pillarNode.getSender().getPos();
                 srcVec = new Vec3d(senderPos).add(offset);
-            } else if (!cableNode.srcQuads.isEmpty()) cableNode.srcQuads.clear();
-            if (cableNode.getTarget() != null) {
-                BlockPos targetPos = cableNode.getTarget().getPos();
+            } else if (!pillarNode.srcQuads.isEmpty()) pillarNode.srcQuads.clear();
+            if (pillarNode.getTarget() != null) {
+                BlockPos targetPos = pillarNode.getTarget().getPos();
                 dstVec = new Vec3d(targetPos).add(offset);
-            } else if (!cableNode.dstQuads.isEmpty()) cableNode.dstQuads.clear();
+            } else if (!pillarNode.dstQuads.isEmpty()) pillarNode.dstQuads.clear();
 
             TextureAtlasSprite texture = Minecraft.getMinecraft().getTextureMapBlocks().getAtlasSprite(
-                    "nyasamaelectricity:block/cable"
+                    "nyasamaelectricity:block/pillar"
             );
 
-            x = x - cableNode.getPos().getX();
-            y = y - cableNode.getPos().getY();
-            z = z - cableNode.getPos().getZ();
+            x = x - pillarNode.getPos().getX();
+            y = y - pillarNode.getPos().getY();
+            z = z - pillarNode.getPos().getZ();
 
             if (srcVec != null) {
-                if (cableNode.srcQuads.isEmpty()) {
-                    RawQuadGroup group = Wire.renderHardCable(srcVec, theVec, texture);
-                    group.bake(cableNode.srcQuads);
+                if (pillarNode.srcQuads.isEmpty()) {
+                    RawQuadGroup group = Wire.renderPillar(srcVec, theVec, texture);
+                    group.bake(pillarNode.srcQuads);
                 }
-                render(buffer, x, y, z, cableNode.srcQuads);
+                render(buffer, x, y, z, pillarNode.srcQuads);
             }
 
             if (dstVec != null) {
-                if (cableNode.dstQuads.isEmpty()) {
-                    RawQuadGroup group = Wire.renderHardCable(theVec, dstVec, texture);
-                    group.bake(cableNode.dstQuads);
+                if (pillarNode.dstQuads.isEmpty()) {
+                    RawQuadGroup group = Wire.renderPillar(theVec, dstVec, texture);
+                    group.bake(pillarNode.dstQuads);
                 }
-                render(buffer, x, y, z, cableNode.dstQuads);
+                render(buffer, x, y, z, pillarNode.dstQuads);
             }
 
         }

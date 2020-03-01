@@ -11,6 +11,7 @@ import net.minecraft.util.math.Vec3d;
  */
 public class Wire {
 
+    // Catenary (not railway)
     protected static class Catenary {
 
         private final float u, x1, k;
@@ -81,6 +82,7 @@ public class Wire {
 
     }
 
+    // Catenary cable (not railway)
     protected static RawQuadGroup renderCatenaryCable(Vec3d from, Vec3d to, boolean half, float drop, float thickness, TextureAtlasSprite texture) {
         RawQuadGroup ret = new RawQuadGroup();
 
@@ -109,6 +111,7 @@ public class Wire {
         return ret;
     }
 
+    // Catenary cable (not railway)
     public static RawQuadGroup renderCable(Vec3d from, Vec3d to, TextureAtlasSprite texture) {
         Vec3d vec = to.subtract(from);
         double hlen = Math.sqrt(vec.x * vec.x + vec.z * vec.z);
@@ -120,6 +123,7 @@ public class Wire {
         return renderCatenaryCable(from, vec, false, (float) drop, 0.0625F, texture);
     }
 
+    // Straight cable (not railway)
     public static RawQuadGroup renderHardCable(Vec3d from, Vec3d to, TextureAtlasSprite texture) {
         RawQuadGroup ret = new RawQuadGroup();
 
@@ -137,7 +141,27 @@ public class Wire {
         ret.translateCoord((float) from.x, (float) from.y, (float) from.z);
         return ret;
     }
-    
+
+    // Straight pillar
+    public static RawQuadGroup renderPillar(Vec3d from, Vec3d to, TextureAtlasSprite texture) {
+        RawQuadGroup ret = new RawQuadGroup();
+
+        float size = 0.75F;
+        Vec3d vec = to.subtract(from);
+        double len = vec.lengthVector();
+        double hlen = Math.sqrt(vec.x * vec.x + vec.z * vec.z);
+        float angle = (float) MathHelper.atan2(vec.y, hlen);
+
+        ret.add((new RawQuadCube(size, (float) len, size, texture))
+                .rotateAroundZ(angle * 180F / (float) Math.PI)
+        );
+
+        ret.rotateToVec((float) from.x, 0, (float) from.z, (float) to.x, 0, (float) to.z);
+        ret.translateCoord((float) from.x, (float) from.y, (float) from.z);
+        return ret;
+    }
+
+    // Railway catenary
     public static RawQuadGroup renderCatenary(Vec3d from, Vec3d to, TextureAtlasSprite texture) {
         RawQuadGroup ret = new RawQuadGroup();
 

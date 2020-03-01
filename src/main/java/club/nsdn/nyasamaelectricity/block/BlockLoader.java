@@ -1,10 +1,7 @@
 package club.nsdn.nyasamaelectricity.block;
 
 import club.nsdn.nyasamaelectricity.NyaSamaElectricity;
-import club.nsdn.nyasamaelectricity.tileblock.CableEndpoint;
-import club.nsdn.nyasamaelectricity.tileblock.CableNode;
-import club.nsdn.nyasamaelectricity.tileblock.WireEndpoint;
-import club.nsdn.nyasamaelectricity.tileblock.WireNode;
+import club.nsdn.nyasamaelectricity.tileblock.*;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -108,6 +105,8 @@ public class BlockLoader {
         blocks.add(catenaryNode = new WireNode("CatenaryNode", "catenary_node", 0.25, 1, 0.25));
         blocks.add(new CableEndpoint());
         blocks.add(new CableNode());
+        blocks.add(new PillarEndpoint());
+        blocks.add(new PillarNode());
     }
 
 }
