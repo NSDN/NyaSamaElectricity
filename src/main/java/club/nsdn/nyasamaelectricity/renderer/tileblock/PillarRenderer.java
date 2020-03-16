@@ -2,7 +2,7 @@ package club.nsdn.nyasamaelectricity.renderer.tileblock;
 
 import club.nsdn.nyasamaelectricity.tileblock.PillarNode;
 import club.nsdn.nyasamaelectricity.util.Wire;
-import club.nsdn.nyasamaelectricity.util.catenary.RawQuadGroup;
+import cn.ac.nya.rawmdl.RawQuadGroup;
 import club.nsdn.nyasamatelecom.api.render.AbsFastTESR;
 import club.nsdn.nyasamatelecom.api.tileentity.TileEntityBase;
 import net.minecraft.client.Minecraft;

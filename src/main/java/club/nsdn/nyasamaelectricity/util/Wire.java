@@ -1,7 +1,7 @@
 package club.nsdn.nyasamaelectricity.util;
 
-import club.nsdn.nyasamaelectricity.util.catenary.RawQuadCube;
-import club.nsdn.nyasamaelectricity.util.catenary.RawQuadGroup;
+import cn.ac.nya.rawmdl.RawQuadCube;
+import cn.ac.nya.rawmdl.RawQuadGroup;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
