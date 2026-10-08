@@ -27,13 +27,13 @@
     "facing=south": [
       {
         "model": "nyasamaelectricity:block/insulator_mid",
-        "x": -90
+        "x": 270
       }
     ],
     "facing=west": [
       {
         "model": "nyasamaelectricity:block/insulator_mid",
-        "x": -90,
+        "x": 270,
         "y": 90
       }
     ]

@@ -94,6 +94,10 @@ public final class ElectricityBlocks {
     }
 
     static {
+        // NOTE: these six ids live in BuiltInRegistries.BLOCK_TYPE (the codec registry), NOT in the block
+        // registry -- none of them is a block, so none of them needs a blockstate or an item model. They
+        // are named after the codec's class, and one entry covers every block of that class (all eight
+        // catenary variants share BlockCatenary.CODEC, exactly as vanilla's "stairs" covers every stair).
         BLOCK_TYPES.register("big_pillar", () -> BlockBigPillar.CODEC);
         BLOCK_TYPES.register("catenary", () -> BlockCatenary.CODEC);
         BLOCK_TYPES.register("hv_sign", () -> BlockHVSign.CODEC);

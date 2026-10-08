@@ -27,13 +27,13 @@
     "facing=south": [
       {
         "model": "nyasamaelectricity:block/quad_small",
-        "x": -90
+        "x": 270
       }
     ],
     "facing=west": [
       {
         "model": "nyasamaelectricity:block/quad_small",
-        "x": -90,
+        "x": 270,
         "y": 90
       }
     ]
