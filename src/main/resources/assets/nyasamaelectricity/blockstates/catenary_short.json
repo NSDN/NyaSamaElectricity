@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": [
+      {
+        "model": "nyasamaelectricity:block/catenary_short"
+      }
+    ],
+    "facing=east": [
+      {
+        "model": "nyasamaelectricity:block/catenary_short",
+        "y": 90
+      }
+    ],
+    "facing=south": [
+      {
+        "model": "nyasamaelectricity:block/catenary_short",
+        "y": 180
+      }
+    ],
+    "facing=west": [
+      {
+        "model": "nyasamaelectricity:block/catenary_short",
+        "y": 270
+      }
+    ]
+  }
+}

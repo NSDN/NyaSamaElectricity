@@ -1,0 +1,9 @@
+{
+  "loader": "neoforge:obj",
+  "model": "nyasamaelectricity:models/block/big_pillar_side.obj",
+  "mtl_override": "nyasamaelectricity:models/block/big_pillar_side.mtl",
+  "automatic_culling": false,
+  "shade_quads": true,
+  "flip_v": false,
+  "emissive_ambient": false
+}

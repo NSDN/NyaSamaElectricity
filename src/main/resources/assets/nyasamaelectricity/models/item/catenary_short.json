@@ -1,0 +1,6 @@
+{
+  "parent": "nyasamaelectricity:block/tile_icon",
+  "textures": {
+    "icon": "nyasamaelectricity:block/catenary_shelf_arm_short"
+  }
+}

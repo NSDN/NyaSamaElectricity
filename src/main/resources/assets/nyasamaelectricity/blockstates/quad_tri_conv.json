@@ -1,0 +1,54 @@
+{
+  "variants": {
+    "facing=north,vertical=true": [
+      {
+        "model": "nyasamaelectricity:block/quad_tri_conv"
+      }
+    ],
+    "facing=east,vertical=true": [
+      {
+        "model": "nyasamaelectricity:block/quad_tri_conv",
+        "y": 90
+      }
+    ],
+    "facing=south,vertical=true": [
+      {
+        "model": "nyasamaelectricity:block/quad_tri_conv",
+        "y": 180
+      }
+    ],
+    "facing=west,vertical=true": [
+      {
+        "model": "nyasamaelectricity:block/quad_tri_conv",
+        "y": 270
+      }
+    ],
+    "facing=north,vertical=false": [
+      {
+        "model": "nyasamaelectricity:block/quad_tri_conv",
+        "x": 90
+      }
+    ],
+    "facing=east,vertical=false": [
+      {
+        "model": "nyasamaelectricity:block/quad_tri_conv",
+        "x": 90,
+        "y": 90
+      }
+    ],
+    "facing=south,vertical=false": [
+      {
+        "model": "nyasamaelectricity:block/quad_tri_conv",
+        "x": 90,
+        "y": 180
+      }
+    ],
+    "facing=west,vertical=false": [
+      {
+        "model": "nyasamaelectricity:block/quad_tri_conv",
+        "x": 90,
+        "y": 270
+      }
+    ]
+  }
+}

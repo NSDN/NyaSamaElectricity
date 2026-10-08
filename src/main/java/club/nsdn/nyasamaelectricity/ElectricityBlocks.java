@@ -70,8 +70,19 @@ public final class ElectricityBlocks {
     /** 1.12.2 {@code BlockLoader.logo}: also the creative-tab icon. */
     public static DeferredBlock<BlockLogo> LOGO;
 
-    private static DeferredBlock<WireNode> WIRE_NODE;
-    private static DeferredBlock<WireNode> CATENARY_NODE;
+    /*
+     * The six device blocks. Held in fields (rather than only in locals) because
+     * ElectricityBlockEntities has to name them as the valid blocks of their types, and because
+     * 1.12.2's BlockLoader exposed wireNode/catenaryNode to the renderer -- see wireNode() below.
+     */
+    static DeferredBlock<WireEndpoint> WIRE_ENDPOINT;
+    static DeferredBlock<WireNode> WIRE_NODE;
+    static DeferredBlock<WireEndpoint> CATENARY_ENDPOINT;
+    static DeferredBlock<WireNode> CATENARY_NODE;
+    static DeferredBlock<CableEndpoint> CABLE_ENDPOINT;
+    static DeferredBlock<CableNode> CABLE_NODE;
+    static DeferredBlock<PillarEndpoint> PILLAR_ENDPOINT;
+    static DeferredBlock<PillarNode> PILLAR_NODE;
 
     private ElectricityBlocks() {
     }
@@ -163,39 +174,41 @@ public final class ElectricityBlocks {
             ITEMS.registerSimpleBlockItem(triShelf);
         }
 
-        // Wire / catenary endpoints and nodes: the box sizes come straight from BlockLoader.
-        DeferredBlock<WireEndpoint> wireEndpoint = BLOCKS.register("wire_endpoint",
+        // Wire / catenary endpoints and nodes: the box sizes come straight from BlockLoader. The
+        // catenary pair shares the wire block entities' types, exactly as 1.12.2 registered one tile
+        // entity per class, so both pass the same type supplier.
+        WIRE_ENDPOINT = BLOCKS.register("wire_endpoint",
                 () -> new WireEndpoint(deviceProperties(), ElectricityBlockEntities::wireEndpointType,
                         0.25, 0.25, 0.25));
-        ITEMS.registerSimpleBlockItem(wireEndpoint);
+        ITEMS.registerSimpleBlockItem(WIRE_ENDPOINT);
         WIRE_NODE = BLOCKS.register("wire_node",
                 () -> new WireNode(deviceProperties(), ElectricityBlockEntities::wireNodeType,
                         0.25, 0.25, 0.25));
         ITEMS.registerSimpleBlockItem(WIRE_NODE);
-        DeferredBlock<WireEndpoint> catenaryEndpoint = BLOCKS.register("catenary_endpoint",
-                () -> new WireEndpoint(deviceProperties(), ElectricityBlockEntities::catenaryEndpointType,
+        CATENARY_ENDPOINT = BLOCKS.register("catenary_endpoint",
+                () -> new WireEndpoint(deviceProperties(), ElectricityBlockEntities::wireEndpointType,
                         0.25, 1.0, 0.25));
-        ITEMS.registerSimpleBlockItem(catenaryEndpoint);
+        ITEMS.registerSimpleBlockItem(CATENARY_ENDPOINT);
         CATENARY_NODE = BLOCKS.register("catenary_node",
-                () -> new WireNode(deviceProperties(), ElectricityBlockEntities::catenaryNodeType,
+                () -> new WireNode(deviceProperties(), ElectricityBlockEntities::wireNodeType,
                         0.25, 1.0, 0.25));
         ITEMS.registerSimpleBlockItem(CATENARY_NODE);
 
-        DeferredBlock<CableEndpoint> cableEndpoint = BLOCKS.register("cable_endpoint",
+        CABLE_ENDPOINT = BLOCKS.register("cable_endpoint",
                 () -> new CableEndpoint(deviceProperties(), ElectricityBlockEntities::cableEndpointType));
-        ITEMS.registerSimpleBlockItem(cableEndpoint);
-        DeferredBlock<CableNode> cableNode = BLOCKS.register("cable_node",
+        ITEMS.registerSimpleBlockItem(CABLE_ENDPOINT);
+        CABLE_NODE = BLOCKS.register("cable_node",
                 () -> new CableNode(deviceProperties(), ElectricityBlockEntities::cableNodeType));
-        ITEMS.registerSimpleBlockItem(cableNode);
+        ITEMS.registerSimpleBlockItem(CABLE_NODE);
 
         // The steel pillar pair is a genuine full cube in 1.12.2 (isOpaqueCube/isFullCube both true),
         // so unlike every other device it must NOT be noOcclusion().
-        DeferredBlock<PillarEndpoint> pillarEndpoint = BLOCKS.register("pillar_endpoint",
+        PILLAR_ENDPOINT = BLOCKS.register("pillar_endpoint",
                 () -> new PillarEndpoint(solidDeviceProperties(), ElectricityBlockEntities::pillarEndpointType));
-        ITEMS.registerSimpleBlockItem(pillarEndpoint);
-        DeferredBlock<PillarNode> pillarNode = BLOCKS.register("pillar_node",
+        ITEMS.registerSimpleBlockItem(PILLAR_ENDPOINT);
+        PILLAR_NODE = BLOCKS.register("pillar_node",
                 () -> new PillarNode(solidDeviceProperties(), ElectricityBlockEntities::pillarNodeType));
-        ITEMS.registerSimpleBlockItem(pillarNode);
+        ITEMS.registerSimpleBlockItem(PILLAR_NODE);
     }
 
     /** The wire node / catenary node instances, for the deferred renderer (1.12.2 {@code BlockLoader.wireNode}). */

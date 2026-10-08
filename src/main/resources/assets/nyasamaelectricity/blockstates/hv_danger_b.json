@@ -1,0 +1,39 @@
+{
+  "variants": {
+    "facing=north": [
+      {
+        "model": "nyasamaelectricity:block/hv_danger",
+        "textures": {
+          "front": "nyasamaelectricity:block/hv_danger_b"
+        }
+      }
+    ],
+    "facing=east": [
+      {
+        "model": "nyasamaelectricity:block/hv_danger",
+        "textures": {
+          "front": "nyasamaelectricity:block/hv_danger_b"
+        },
+        "y": 90
+      }
+    ],
+    "facing=south": [
+      {
+        "model": "nyasamaelectricity:block/hv_danger",
+        "textures": {
+          "front": "nyasamaelectricity:block/hv_danger_b"
+        },
+        "y": 180
+      }
+    ],
+    "facing=west": [
+      {
+        "model": "nyasamaelectricity:block/hv_danger",
+        "textures": {
+          "front": "nyasamaelectricity:block/hv_danger_b"
+        },
+        "y": 270
+      }
+    ]
+  }
+}

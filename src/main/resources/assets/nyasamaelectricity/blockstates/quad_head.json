@@ -1,0 +1,41 @@
+{
+  "variants": {
+    "facing=up": [
+      {
+        "model": "nyasamaelectricity:block/quad_head"
+      }
+    ],
+    "facing=down": [
+      {
+        "model": "nyasamaelectricity:block/quad_head",
+        "x": 180
+      }
+    ],
+    "facing=north": [
+      {
+        "model": "nyasamaelectricity:block/quad_head",
+        "x": 90
+      }
+    ],
+    "facing=east": [
+      {
+        "model": "nyasamaelectricity:block/quad_head",
+        "x": 90,
+        "y": 90
+      }
+    ],
+    "facing=south": [
+      {
+        "model": "nyasamaelectricity:block/quad_head",
+        "x": -90
+      }
+    ],
+    "facing=west": [
+      {
+        "model": "nyasamaelectricity:block/quad_head",
+        "x": -90,
+        "y": 90
+      }
+    ]
+  }
+}

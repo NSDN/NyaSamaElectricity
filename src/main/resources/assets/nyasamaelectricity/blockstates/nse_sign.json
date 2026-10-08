@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "nyasamaelectricity:block/cube_block",
+        "textures": {
+          "texture": "nyasamaelectricity:block/nse_sign"
+        }
+      }
+    ]
+  }
+}

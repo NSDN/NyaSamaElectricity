@@ -1,0 +1,41 @@
+{
+  "variants": {
+    "facing=up": [
+      {
+        "model": "nyasamaelectricity:block/insulator_mid"
+      }
+    ],
+    "facing=down": [
+      {
+        "model": "nyasamaelectricity:block/insulator_mid",
+        "x": 180
+      }
+    ],
+    "facing=north": [
+      {
+        "model": "nyasamaelectricity:block/insulator_mid",
+        "x": 90
+      }
+    ],
+    "facing=east": [
+      {
+        "model": "nyasamaelectricity:block/insulator_mid",
+        "x": 90,
+        "y": 90
+      }
+    ],
+    "facing=south": [
+      {
+        "model": "nyasamaelectricity:block/insulator_mid",
+        "x": -90
+      }
+    ],
+    "facing=west": [
+      {
+        "model": "nyasamaelectricity:block/insulator_mid",
+        "x": -90,
+        "y": 90
+      }
+    ]
+  }
+}
