@@ -18,11 +18,15 @@ import net.neoforged.bus.api.IEventBus;
  *   <li>{@link #registerCommon} -- the block, block-entity and creative-tab deferred registers
  *       (1.12.2: {@code BlockLoader} + {@code TileEntityLoader});</li>
  *   <li>{@link #registerServer} -- empty in 1.12.2 and still empty;</li>
- *   <li>{@link #registerClient} -- 1.12.2 registered the tile-entity special renderers here. That is
- *       deferred with the renderers themselves ({@code renderer.tileblock.*}, {@code util.Wire} and
- *       {@code TileEntityModelBinder}, all of which depend on the discarded {@code cn.ac.nya.rawmdl}
- *       pipeline and on the fast-TESR API that 1.21.1 no longer has), so the body is deliberately
- *       empty and the 1.12.2 call site is recorded here rather than invented in advance.</li>
+ *   <li>{@link #registerClient} -- 1.12.2 registered {@code tileblock.TileEntityModelBinder} here, which
+ *       both ran the model pass and bound the three cable/wire/pillar special renderers. Both halves
+ *       moved: item/block models are JSON resources now, and the renderers are bound to block entity
+ *       types by {@code renderer.ElectricityRenderers} on
+ *       {@code EntityRenderersEvent.RegisterRenderers}. That class carries
+ *       {@code @EventBusSubscriber(value = Dist.CLIENT)} and is discovered by the loader, so it must
+ *       <b>not</b> be referenced from here -- this method runs in the mod constructor, i.e. on both
+ *       sides, and the subscriber class names client-only types. The body therefore stays empty, with
+ *       the 1.12.2 call site recorded rather than invented in advance.</li>
  * </ul>
  */
 public class EventRegister {
@@ -40,8 +44,9 @@ public class EventRegister {
     }
 
     /**
-     * 1.12.2 registered {@code TileEntityModelBinder.instance()} here. The renderers are not ported yet;
-     * see the class note and the module report.
+     * 1.12.2 registered {@code TileEntityModelBinder.instance()} here. Its two jobs are now done
+     * elsewhere -- JSON models by the resource pack, the three renderers by
+     * {@code renderer.ElectricityRenderers} (client-only, annotation-discovered); see the class note.
      */
     public static void registerClient(IEventBus modBus) {
     }

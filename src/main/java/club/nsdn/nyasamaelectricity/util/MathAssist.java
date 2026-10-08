@@ -10,10 +10,11 @@ import net.minecraft.util.Mth;
  * pair and the three inverse hyperbolics -- are kept verbatim, because {@code Wire}'s catenary solver
  * depends on their exact behaviour.</p>
  *
- * <p><b>Consumer note:</b> this class is the only part of {@code util} that is not tied to the
- * discarded rendering pipeline; {@code Wire} itself (200 lines of {@code cn.ac.nya.rawmdl.RawQuad*}
- * geometry, decision D4) is deferred together with the three block entity renderers. Porting
- * {@code MathAssist} now keeps the pure mathematics in the tree, ready for the renderer task.</p>
+ * <p><b>Consumer note:</b> this class is the pure-mathematics half of {@code util}; the other half is
+ * {@link Wire}, which used to depend on {@code cn.ac.nya.rawmdl.RawQuad*} (decision D4) and now emits
+ * its vertices directly with the modern pipeline. {@code Wire} is what the catenary solver here is
+ * for: {@code Wire.Catenary} calls {@code asinh}/{@code acosh}/{@code atanh} with the 1.12.2 formulas
+ * unchanged.</p>
  */
 public class MathAssist {
 

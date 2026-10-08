@@ -29,7 +29,7 @@ import java.util.function.Supplier;
  * <p>The class extends the ported {@code SignalBox}, i.e. the whole cabled-network behaviour (sender /
  * target link, {@code META} bit 0x8, control functions) comes from the telecom API, as it did in
  * 1.12.2. What is <b>not</b> here is the fast tile-entity renderer plumbing the 1.12.2 block entity
- * carried:</p>
+ * carried, because 1.21.1 removed the hooks it was built on:</p>
  * <ul>
  *   <li>{@code srcQuads}/{@code dstQuads} (client-only {@code LinkedList<BakedQuad>} caches of the
  *       wire geometry),</li>
@@ -37,12 +37,14 @@ import java.util.function.Supplier;
  *       {@code getRenderBoundingBox() == INFINITE_EXTENT_AABB} and
  *       {@code getMaxRenderDistanceSquared() == 65536}.</li>
  * </ul>
- * <p>They are renderer state, not block-entity state, and 1.21.1 removed all four hooks from
- * {@code BlockEntity} (javap-verified); 1.21.1 also has no fast block-entity renderer at all. They are
- * deferred to the renderer task, together with {@code WireRenderer} and {@code util.Wire}, which are
- * the only consumers. See the module report for the planned replacement (a normal
- * {@code BlockEntityRenderer} with {@code shouldRender} / {@code getViewDistance} supplying what the
- * removed hooks used to).</p>
+ * <p>They were renderer state rather than block-entity state, and 1.21.1 removed all four hooks from
+ * {@code BlockEntity} (javap-verified) and has no fast block-entity renderer at all. The geometry is
+ * therefore produced on the client by {@code renderer.tileblock.WireRenderer} with
+ * {@code util.Wire}, and the two render bounds the hooks expressed are supplied there:
+ * {@code shouldRenderOffScreen} for {@code isGlobalRenderer} and {@code getViewDistance() == 256} for
+ * {@code getMaxRenderDistanceSquared() == 65536.0}. The quad caches are the one piece with no
+ * counterpart -- a client-only field cannot live on a block entity that also loads on the server --
+ * so the geometry is rebuilt per frame instead.</p>
  *
  * <p>{@code shouldSideBeRendered} returned {@code true}; in 1.21.1 that is the {@code noOcclusion()}
  * block property, which the registration layer sets.</p>
@@ -57,7 +59,9 @@ public class WireNode extends SignalBox implements SideSolid {
 
         /* NOT PORTED: srcQuads / dstQuads (client-only renderer caches), hasFastRenderer(),
          * shouldRenderInPass(int), getRenderBoundingBox(), getMaxRenderDistanceSquared() --
-         * renderer state, and the hooks no longer exist on BlockEntity (javap-verified). */
+         * renderer state, and the hooks no longer exist on BlockEntity (javap-verified).
+         * The geometry and the two render bounds are supplied by
+         * renderer.tileblock.WireRenderer; see the class note. */
     }
 
     public final AABB AABB;

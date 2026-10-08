@@ -30,7 +30,9 @@ import java.util.function.Supplier;
  * {@code SideSolid} seam is needed for this class.</p>
  *
  * <p>Cable/pillar behaviour is unchanged: this is still a {@code SignalBox}. The renderer-only members
- * of the 1.12.2 block entity are not ported; see {@code WireNode} and the module report.</p>
+ * of the 1.12.2 block entity are not ported -- the four hooks behind them do not exist on 1.21.1's
+ * {@code BlockEntity} -- and the pillar link between node centres is drawn by
+ * {@code renderer.tileblock.PillarRenderer} with {@code util.Wire}; see {@code WireNode}.</p>
  */
 public class PillarNode extends SignalBox {
 
@@ -41,7 +43,9 @@ public class PillarNode extends SignalBox {
         }
 
         /* NOT PORTED: srcQuads / dstQuads (client-only renderer caches), hasFastRenderer(),
-         * shouldRenderInPass(int), getRenderBoundingBox(), getMaxRenderDistanceSquared(). */
+         * shouldRenderInPass(int), getRenderBoundingBox(), getMaxRenderDistanceSquared().
+         * The geometry and the two render bounds are supplied by
+         * renderer.tileblock.PillarRenderer; see the class note. */
     }
 
     public PillarNode(BlockBehaviour.Properties properties,

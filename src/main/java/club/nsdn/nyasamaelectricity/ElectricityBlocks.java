@@ -48,8 +48,8 @@ import net.neoforged.neoforge.registries.DeferredRegister;
  * quad shelves, the three tri shelves, then the six cable-network devices -- 31 blocks in all. Two
  * static fields of the old loader survive as deferred holders because other code referred to them:
  * {@link #LOGO} (the creative-tab icon) and the wire node pair behind {@link #wireNode()} /
- * {@link #catenaryNode()} (the deferred renderer needs to tell the catenary node apart from the wire
- * node, exactly as the 1.12.2 {@code WireRenderer} did).</p>
+ * {@link #catenaryNode()} (the renderer needs to tell the catenary node apart from the wire node,
+ * exactly as the 1.12.2 {@code WireRenderer} did).</p>
  *
  * <p>Block-type registration: 1.20.5+ requires every block subclass with a <b>custom</b> codec to be
  * registered in {@code BuiltInRegistries.BLOCK_TYPE}. Only the six classes below have one -- the three
@@ -215,12 +215,12 @@ public final class ElectricityBlocks {
         ITEMS.registerSimpleBlockItem(PILLAR_NODE);
     }
 
-    /** The wire node / catenary node instances, for the deferred renderer (1.12.2 {@code BlockLoader.wireNode}). */
+    /** The wire node instance, for the renderer (1.12.2 {@code BlockLoader.wireNode}). */
     public static WireNode wireNode() {
         return WIRE_NODE == null ? null : WIRE_NODE.get();
     }
 
-    /** The catenary node instance, for the deferred renderer (1.12.2 {@code BlockLoader.catenaryNode}). */
+    /** The catenary node instance, for the renderer (1.12.2 {@code BlockLoader.catenaryNode}). */
     public static WireNode catenaryNode() {
         return CATENARY_NODE == null ? null : CATENARY_NODE.get();
     }

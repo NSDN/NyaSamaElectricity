@@ -40,8 +40,10 @@ import java.util.function.Supplier;
  * {@code META} bit 0x8, control functions) exactly as in 1.12.2. The block entity's client-only
  * {@code srcQuads}/{@code dstQuads} quad caches and the removed render hooks
  * ({@code hasFastRenderer}, {@code shouldRenderInPass}, {@code getRenderBoundingBox},
- * {@code getMaxRenderDistanceSquared}) are renderer state and are deferred with the renderers; see
- * {@code WireNode} and the module report.</p>
+ * {@code getMaxRenderDistanceSquared}) have no 1.21.1 counterpart (javap-verified: the hooks no longer
+ * exist on {@code BlockEntity}); the cable geometry itself is drawn by
+ * {@code renderer.tileblock.CableRenderer} with {@code util.Wire}, and the two render bounds are
+ * supplied there. See {@code WireNode} for the full note.</p>
  */
 public class CableNode extends SignalBox implements SideSolid {
 
@@ -52,7 +54,9 @@ public class CableNode extends SignalBox implements SideSolid {
         }
 
         /* NOT PORTED: srcQuads / dstQuads (client-only renderer caches), hasFastRenderer(),
-         * shouldRenderInPass(int), getRenderBoundingBox(), getMaxRenderDistanceSquared(). */
+         * shouldRenderInPass(int), getRenderBoundingBox(), getMaxRenderDistanceSquared().
+         * The geometry and the two render bounds are supplied by
+         * renderer.tileblock.CableRenderer; see the class note. */
     }
 
     public static final BooleanProperty UP = BlockStateProperties.UP;
