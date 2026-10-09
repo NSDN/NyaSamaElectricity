@@ -24,13 +24,6 @@ ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.nyasamaelectricity]]
-modId = "core"
-type = "required"
-versionRange = "[3.0.0,)"
-ordering = "AFTER"
-side = "BOTH"
-
-[[dependencies.nyasamaelectricity]]
 modId = "nyasamalib"
 type = "required"
 versionRange = "[3.0.0,)"
